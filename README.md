@@ -1,6 +1,6 @@
 # About Repository
 
-> ## My JavaScript Codes Review
+> ## My JavaScript Course Code Review
 >
 > ![image](https://github.com/user-attachments/assets/73335949-0564-409e-9262-5d2d53c39c7e)
 
