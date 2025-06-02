@@ -18,12 +18,10 @@ console.log(arr);
 
 //reverse method
 console.log(arr.reverse());
+
 //concat method
-
 const arr2 = [6, 7];
-
 console.log(arr.concat(arr2));
-
 console.log([...arr, ...arr2]);
 
 //  join method
@@ -34,7 +32,6 @@ console.log(arr.join("#"));
 
 console.log(arr.at(2));
 console.log(arr.at(-2));
-
 console.log("hello".at(-1));
 
 ///////////////////
