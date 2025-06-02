@@ -1,3 +1,5 @@
+//simple array methods
+
 //    slice method
 const arr = [1, 2, 3, 4, 5];
 console.log(arr.slice(0, 2));
@@ -26,6 +28,7 @@ console.log([...arr, ...arr2]);
 
 //  join method
 console.log(arr.join("#"));
+///////////////////////////////////////////
 
 //new at method
 
@@ -33,3 +36,5 @@ console.log(arr.at(2));
 console.log(arr.at(-2));
 
 console.log("hello".at(-1));
+
+///////////////////
