@@ -78,6 +78,6 @@ map.forEach(function (value, index, map) {
 console.log("set");
 const mySet = new Set(["eur", "eur", "usd"]);
 
-mySet.forEach(function (value, _, mySet) {
+mySet.forEach(function (value, _ , mySet) {
   console.log(`${(value, _)}`);
 });
