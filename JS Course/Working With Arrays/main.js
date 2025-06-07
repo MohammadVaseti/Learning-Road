@@ -120,3 +120,20 @@ const checkDogs = function (arr1, arr2) {
 checkDogs(julia1, kate1);
 console.log("////data2");
 checkDogs(julia2, kate2);
+
+// data tranformations map,filter,reduce
+
+// map
+const movements = [200, -100, 300, 150];
+
+const eurToUsd = 2;
+const movementsUSD = movements.map(function (el, i, movements) {
+  console.log(el * eurToUsd);
+});
+
+// filter
+movements.filter(function (e, i, movements) {
+  if (e > 100) {
+    console.log(e, i);
+  }
+});
