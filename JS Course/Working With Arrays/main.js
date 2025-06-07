@@ -137,3 +137,9 @@ movements.filter(function (e, i, movements) {
     console.log(e, i);
   }
 });
+
+// reduce
+const result = movements.reduce(function (acc, el, i, movements) {
+  return acc + el;
+}, 0);
+console.log(result);
