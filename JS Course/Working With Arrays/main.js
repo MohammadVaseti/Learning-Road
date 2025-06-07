@@ -82,7 +82,12 @@ mySet.forEach(function (value, _, mySet) {
   console.log(`${(value, _)}`);
 });
 
-// creating DOM Elements  i use this lecture in bankist app
+// creating DOM Elements
+
+// usage of insertAdjacentHTML
+let h1 = document.querySelector("h1");
+const html = `hello this is fo test ${2 + 2}`;
+h1.insertAdjacentHTML("afterbegin", html);
 
 // Challeng#1
 const julia1 = [3, 5, 2, 12, 17];
@@ -102,9 +107,9 @@ const checkDogs = function (arr1, arr2) {
 
   bothArr.forEach(function (v, i, bothArr) {
     if (v >= 3) {
-      console.log(`the dog number ${i + 1} age ${v} is adult`);
+      console.log(`the dog number ${i + 1} age = ${v} is adult`);
     } else {
-      console.log(`the dog number ${i + 1} age ${v} is pupy`);
+      console.log(`the dog number ${i + 1} age = ${v} is pupy`);
     }
   });
 };
