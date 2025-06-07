@@ -143,3 +143,4 @@ const result = movements.reduce(function (acc, el, i, movements) {
   return acc + el;
 }, 0);
 console.log(result);
+////////////////////////////////////////
