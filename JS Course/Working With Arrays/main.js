@@ -86,9 +86,12 @@ mySet.forEach(function (value, _, mySet) {
 
 // usage of insertAdjacentHTML
 let h1 = document.querySelector("h1");
-const html = `hello this is fo test ${2 + 2}`;
+const html = `hello this is for test ${2 + 2}`;
 h1.insertAdjacentHTML("afterbegin", html);
 
+// diffrence between innerHTML & textContent
+h1.innerHTML = `<a herf='#'>link</a> with codes`;
+h1.textContent += `<a herf='#'>link</a> without codes`;
 // Challeng#1
 const julia1 = [3, 5, 2, 12, 17];
 const julia1c = [...julia1];
