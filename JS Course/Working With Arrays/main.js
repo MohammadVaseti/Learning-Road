@@ -78,6 +78,37 @@ map.forEach(function (value, index, map) {
 console.log("set");
 const mySet = new Set(["eur", "eur", "usd"]);
 
-mySet.forEach(function (value, _ , mySet) {
+mySet.forEach(function (value, _, mySet) {
   console.log(`${(value, _)}`);
 });
+
+// creating DOM Elements  i use this lecture in bankist app
+
+// Challeng#1
+const julia1 = [3, 5, 2, 12, 17];
+const julia1c = [...julia1];
+// delete index 5,2,12
+// an array with corrected julia and kate
+
+const kate1 = [4, 1, 15, 8, 3];
+
+const julia2 = [9, 16, 6, 8, 3];
+const kate2 = [10, 5, 6, 1, 4];
+
+const checkDogs = function (arr1, arr2) {
+  const newArr1 = arr1.splice(1, 2);
+
+  const bothArr = [...newArr1, ...arr2];
+
+  bothArr.forEach(function (v, i, bothArr) {
+    if (v >= 3) {
+      console.log(`the dog number ${i + 1} age ${v} is adult`);
+    } else {
+      console.log(`the dog number ${i + 1} age ${v} is pupy`);
+    }
+  });
+};
+
+checkDogs(julia1, kate1);
+console.log("////data2");
+checkDogs(julia2, kate2);
