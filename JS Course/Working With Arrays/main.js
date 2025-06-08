@@ -144,3 +144,11 @@ const result = movements.reduce(function (acc, el, i, movements) {
 }, 0);
 console.log(result);
 ////////////////////////////////////////
+
+// computing username
+
+// the filter method
+
+// the challenge fo last of video  => show widthrawals
+
+const movements2 = [200, -100, 300, -50];
