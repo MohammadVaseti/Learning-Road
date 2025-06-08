@@ -82,7 +82,7 @@ mySet.forEach(function (value, _, mySet) {
   console.log(`${(value, _)}`);
 });
 
-// creating DOM Elements
+//* creating DOM Elements
 
 // usage of insertAdjacentHTML
 let h1 = document.querySelector("h1");
@@ -92,7 +92,7 @@ h1.insertAdjacentHTML("afterbegin", html);
 // diffrence between innerHTML & textContent
 h1.innerHTML = `<a herf='#'>link</a> with codes`;
 h1.textContent += `<a herf='#'>link</a> without codes`;
-// Challeng#1
+// *Challeng#1
 const julia1 = [3, 5, 2, 12, 17];
 const julia1c = [...julia1];
 // delete index 5,2,12
@@ -121,7 +121,7 @@ checkDogs(julia1, kate1);
 console.log("////data2");
 checkDogs(julia2, kate2);
 
-// data tranformations map,filter,reduce
+//* */ data tranformations map,filter,reduce
 
 // map
 const movements = [200, -100, 300, 150];
@@ -144,10 +144,20 @@ const result = movements.reduce(function (acc, el, i, movements) {
 }, 0);
 console.log(result);
 ////////////////////////////////////////
+// *the map method
+const money = [100, 200, 300];
+money.map(function (val, ind, money) {
+  console.log("//////", val * 2);
+});
 
-// computing username
+// with for of
 
-// the filter method
+for (const m of money) {
+  console.log(m * 3);
+}
+// *computing username
+
+// *the filter method
 
 // the challenge fo last of video  => show widthrawals
 
