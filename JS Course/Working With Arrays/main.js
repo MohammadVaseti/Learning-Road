@@ -151,4 +151,9 @@ console.log(result);
 
 // the challenge fo last of video  => show widthrawals
 
-const movements2 = [200, -100, 300, -50];
+const movements2 = [200, -100, 300, -50, -255];
+
+const widthrawals = movements2.filter(function (v, i) {
+  return v < 0;
+});
+console.log(widthrawals);
