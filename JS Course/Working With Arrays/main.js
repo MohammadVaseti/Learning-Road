@@ -167,3 +167,12 @@ const widthrawals = movements2.filter(function (v, i) {
   return v < 0;
 });
 console.log(widthrawals);
+
+// the reduce method
+
+const singles = [10, 20, -5];
+
+const total = singles.reduce(function (acc, s) {
+  return acc + s;
+}, 0);
+console.log("///////////", total);
