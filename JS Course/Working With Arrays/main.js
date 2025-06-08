@@ -170,9 +170,16 @@ console.log(widthrawals);
 
 // the reduce method
 
-const singles = [10, 20, -5];
+const singles = [10, 333, 20, -5];
 
 const total = singles.reduce(function (acc, s) {
   return acc + s;
 }, 0);
 console.log("///////////", total);
+
+// find biggest value of array
+
+const biggest = singles.reduce(function (acc, i) {
+  return acc > i ? acc : i;
+}, singles[0]);
+console.log(biggest);
