@@ -26,7 +26,7 @@ const arr2 = [5, 6, 7];
 
 // join
 // console.log(arr.join(" "));
-const fName = ["mohammad", "ali"];
+// const fName = ["mohammad", "ali"];
 // console.log(fName.join(" "));
 
 // at
@@ -35,16 +35,29 @@ const fName = ["mohammad", "ali"];
 
 // forEach
 
-arr.forEach(function (cv, i, myArr) {
-  // console.log(myArr);
-  console.log(cv, i);
-});
+// arr.forEach(function (cv, i, myArr) {
+//   // console.log(myArr);
+//   console.log(cv, i);
+// });
 
-for (const x of arr) {
-  console.log(x, "////for of");
-}
+// for (const x of arr) {
+//   console.log(x, "////for of");
+// }
 // diffrence is break & continue in for of
-const h1 = document.querySelectorAll("h1");
-h1.forEach(function (cv, i, arr) {
-  cv.textContent = `this is h1 number ${i + 1}`;
-});
+// const h1 = document.querySelectorAll("h1");
+// h1.forEach(function (cv, i, arr) {
+//   cv.textContent = `this is h1 number ${i + 1}`;
+// });
+// forEach & DOM
+
+// forEach & map
+// const myMap = new Map([
+//   ["mohammad", 0],
+//   ["ali", 1],
+// ]);
+
+// myMap.forEach(function (i, cv, myMap) {
+//   console.log(i, cv);
+// });
+
+// set
