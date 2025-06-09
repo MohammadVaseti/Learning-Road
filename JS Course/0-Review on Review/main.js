@@ -84,22 +84,22 @@ const newArr = [1, -1, 5, -5, 2, 3];
 // console.log(newArr2);
 // filter
 
-newArr.filter(function (el, i, arr) {
-  return el < 2 ? console.log(el, i) : console.log(`greater than 1 ${(el, i)}`);
-});
+// newArr.filter(function (el, i, arr) {
+//   return el < 2 ? console.log(el, i) : console.log(`greater than 1 ${(el, i)}`);
+// });
 
 // reduce
 
-const totalArr = arr.reduce(function (acc, cv, i, arr) {
-  return (acc += cv);
-}, 0);
-console.log(totalArr);
+// const totalArr = arr.reduce(function (acc, cv, i, arr) {
+//   return (acc += cv);
+// }, 0);
+// console.log(totalArr);
 
 // find biggest array index
 
-const z = [1, 56, 222, 0.43, 105, 17];
-const biggest = z.reduce(function (acc, el, i, arr) {
-  return acc > el ? acc : el;
-}, z[0]);
+// const z = [1, 56, 222, 0.43, 105, 17];
+// const biggest = z.reduce(function (acc, el, i, arr) {
+//   return acc > el ? acc : el;
+// }, z[0]);
 
-console.log(biggest);
+// console.log(biggest);
