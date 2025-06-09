@@ -32,3 +32,16 @@ if (markBMI2 > johnBMI2) {
 } else {
   console.log(`john BMI ${johnBMI2} is greater than mark BMI ${markBMI2}  `);
 }
+
+// challenge 2
+
+if (markBMI > johnBMI) {
+  console.log(`mark bmi ${markBMI} is greater`);
+} else {
+  console.log(`john bmi ${johnBMI}is greater`);
+}
+
+const age = 18;
+console.log(age == "18");
+
+console.log(typeof NaN);
