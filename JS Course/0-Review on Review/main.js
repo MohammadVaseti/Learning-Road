@@ -44,3 +44,7 @@ for (const x of arr) {
   console.log(x, "////for of");
 }
 // diffrence is break & continue in for of
+const h1 = document.querySelectorAll("h1");
+h1.forEach(function (cv, i, arr) {
+  cv.textContent = `this is h1 number ${i + 1}`;
+});
