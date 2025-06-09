@@ -17,4 +17,30 @@ const arr = [1, 2, 3, 4];
 // console.log(arr.splice(-2));
 
 // reverse
-console.log(arr.reverse());
+// console.log(arr.reverse());
+// concat
+const arr2 = [5, 6, 7];
+// console.log(arr.concat(arr2));
+// // its like [...arr , ...arr2]
+// console.log(...arr, ...arr2);
+
+// join
+// console.log(arr.join(" "));
+const fName = ["mohammad", "ali"];
+// console.log(fName.join(" "));
+
+// at
+
+// console.log(fName.at(0));
+
+// forEach
+
+arr.forEach(function (cv, i, myArr) {
+  // console.log(myArr);
+  console.log(cv, i);
+});
+
+for (const x of arr) {
+  console.log(x, "////for of");
+}
+// diffrence is break & continue in for of
