@@ -61,3 +61,16 @@ const arr2 = [5, 6, 7];
 // });
 
 // set
+// const mySet = new Set(["euro", "dollar", "rial"]);
+// mySet.forEach(function (cv, _, mySet) {
+//   console.log(cv);
+// });
+
+// .insertaddjacenthtml
+const h1 = document.querySelectorAll("h1");
+const content = `
+<p><i> insertadjacent practice with template literals ${2 + 2}</i></p>
+`;
+h1.forEach(function (cv, i, h1) {
+  cv.insertAdjacentHTML("afterbegin", content);
+});
