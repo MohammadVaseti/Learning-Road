@@ -50,7 +50,7 @@ const arr2 = [5, 6, 7];
 // });
 // forEach & DOM
 
-// forEach & map
+// forEach & Map
 // const myMap = new Map([
 //   ["mohammad", 0],
 //   ["ali", 1],
@@ -60,17 +60,30 @@ const arr2 = [5, 6, 7];
 //   console.log(i, cv);
 // });
 
-// set
+// forEach & Set
 // const mySet = new Set(["euro", "dollar", "rial"]);
 // mySet.forEach(function (cv, _, mySet) {
 //   console.log(cv);
 // });
 
 // .insertaddjacenthtml
-const h1 = document.querySelectorAll("h1");
-const content = `
-<p><i> insertadjacent practice with template literals ${2 + 2}</i></p>
-`;
-h1.forEach(function (cv, i, h1) {
-  cv.insertAdjacentHTML("afterbegin", content);
+// const h1 = document.querySelectorAll("h1");
+// const content = `
+// <p><i> insertadjacent practice with template literals ${2 + 2}</i></p>
+// `;
+// h1.forEach(function (cv, i, h1) {
+//   cv.insertAdjacentHTML("afterbegin", content);
+// });
+
+// map() array Method
+
+const newArr = [1, -1, 5, -5, 2, 3];
+// const newArr2 = newArr.map(function (el, i, arr) {
+//   return el;
+// });
+// console.log(newArr2);
+// filter
+
+newArr.filter(function (el, i, arr) {
+  return el < 2 ? console.log(el, i) : console.log(`greater than 1 ${(el, i)}`);
 });
