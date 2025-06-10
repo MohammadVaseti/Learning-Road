@@ -214,3 +214,10 @@ console.log(calcAverageHumanAge([16, 6, 10, 5, 6, 1, 4]));
 //////////////
 
 // The Magic of Chaining Methods
+
+const nums = [1, 2, 3, 4, 5];
+const changed = nums
+  .filter((el) => el > 2)
+  .map((el) => el * 2)
+  .reduce((acc, el) => acc + el, 0);
+console.log(changed);
