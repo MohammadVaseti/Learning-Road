@@ -185,6 +185,18 @@ const biggest = singles.reduce(function (acc, i) {
 console.log(biggest);
 
 // #challenge 2
+// convert dog ages to human ages and
+// calculate the average age of dogs in kate & julia studies
+// data1  [5, 2, 4, 1, 15, 8, 3];
+// data 2 [16,6,10,5,6 ,1,4]
 
-// data1
-const ages = [5, 2, 4, 1, 15, 8, 3];
+// create a function
+
+const calcAverageHumanAge = function (ages) {
+  // formula of human ages by dog ages
+  const humanAges = ages.map(function (el, i, arr) {
+    return el <= 2 ? el * 2 : 16 + el * 4;
+  });
+  console.log(humanAges);
+};
+calcAverageHumanAge([5, 2, 4, 1, 15, 8, 3]);
