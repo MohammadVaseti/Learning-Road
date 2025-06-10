@@ -188,14 +188,3 @@ console.log(biggest);
 
 // data1
 const ages = [5, 2, 4, 1, 15, 8, 3];
-const humanAges = [];
-// convert dogages to human ages
-ages.filter(function (el, i, arr) {
-  if (ages[i] <= 2) {
-    return humanAges.push(2 * el);
-  } else {
-    return humanAges.push(16 + el * 4);
-  }
-});
-
-console.log(humanAges);
