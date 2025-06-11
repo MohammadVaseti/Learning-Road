@@ -244,3 +244,33 @@ const calcAverageHumanAge2 = (ages) => {
 };
 calcAverageHumanAge2([5, 2, 4, 1, 15, 8, 3]);
 calcAverageHumanAge2([16, 6, 10, 5, 6, 1, 4]);
+
+// find method
+
+const account1 = { owner: "ali" };
+const account2 = { owner: "sara" };
+const all = [account1, account2];
+
+const specific = all.find(function (el, i, arr) {
+  return el.owner === "sara";
+});
+console.log(specific);
+
+const n = [1, 2, 3];
+const d = n.find(function (el, i, arr) {
+  return el > 1;
+});
+console.log(d);
+
+const found = accounts.find(function (el) {
+  return el.owner === "Jonas Schmedtmann";
+});
+console.log(found);
+
+// with for of
+
+for (const el of accounts) {
+  if (el.owner === "Jonas Schmedtmann") {
+    console.log(el);
+  }
+}
