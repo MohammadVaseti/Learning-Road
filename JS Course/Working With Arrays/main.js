@@ -221,3 +221,26 @@ const changed = nums
   .map((el) => el * 2)
   .reduce((acc, el) => acc + el, 0);
 console.log(changed);
+
+// #challenge 3
+// data1  [5, 2, 4, 1, 15, 8, 3];
+// data 2 [16,6,10,5,6 ,1,4]
+
+const calcAverageHumanAge2 = (ages) => {
+  ////////// start
+  const average = ages
+    .map(function (el, i, arr) {
+      return el <= 2 ? el * 2 : 16 + el * 4;
+    })
+    .filter(function (el, i, arr) {
+      return el >= 18;
+    })
+    .reduce(function (acc, el, i, arr) {
+      return acc + el / arr.length;
+    }, 0);
+  console.log(average);
+
+  ///////end
+};
+calcAverageHumanAge2([5, 2, 4, 1, 15, 8, 3]);
+calcAverageHumanAge2([16, 6, 10, 5, 6, 1, 4]);
