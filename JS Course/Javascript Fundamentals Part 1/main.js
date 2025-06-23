@@ -51,16 +51,25 @@ console.log(typeof NaN);
 // dolphins 96 108 89
 // koalas 88 91 110
 
-const dolphinsAve = (96 + 108 + 89) / 3;
-const koalasAve = (88 + 91 + 110) / 3;
+// data1
+// const dolphinsAve = (96 + 108 + 89) / 3;
+// const koalasAve = (88 + 91 + 110) / 3;
+
+// bonus 1
+// const dolphinsAve = (97 + 112 + 101) / 3;
+// const koalasAve = (109 + 95 + 123) / 3;
+
+// bonuse 2
+const dolphinsAve = (97 + 112 + 101) / 3;
+const koalasAve = (109 + 95 + 106) / 3;
 
 console.log(dolphinsAve, koalasAve);
 
-if (dolphinsAve > koalasAve && dolphinsAve > 100) {
+if (dolphinsAve > koalasAve && dolphinsAve >= 100) {
   console.log(`dolphins are winner ${dolphinsAve}`);
-} else if (koalasAve > dolphinsAve && koalasAve > 100) {
+} else if (koalasAve > dolphinsAve && koalasAve >= 100) {
   console.log(`koalas are winner ${koalasAve}`);
-} else if (dolphinsAve > 100 && koalasAve > 100 && dolphinsAve == koalasAve) {
+} else if (dolphinsAve >= 100 && koalasAve >= 100 && dolphinsAve == koalasAve) {
   console.log(`the match was draw`);
 } else {
   console.log(`no team wins`);
