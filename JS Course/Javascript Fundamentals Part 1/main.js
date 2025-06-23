@@ -74,3 +74,20 @@ if (dolphinsAve > koalasAve && dolphinsAve >= 100) {
 } else {
   console.log(`no team wins`);
 }
+
+// switch case practice
+
+const day = 10;
+
+switch (day) {
+  case 1:
+    console.log("1");
+    break;
+  case 2:
+    console.log("2");
+    break;
+
+  default:
+    console.log("none");
+    break;
+}
