@@ -45,3 +45,13 @@ const age = 18;
 console.log(age == "18");
 
 console.log(typeof NaN);
+
+// challeng 3
+
+// dolphins 96 108 89
+// koalas 88 91 110
+
+const dolphinsAve = (96 + 108 + 89) / 3;
+const koalasAve = (88 + 91 + 110) / 3;
+
+console.log(dolphinsAve, koalasAve);
