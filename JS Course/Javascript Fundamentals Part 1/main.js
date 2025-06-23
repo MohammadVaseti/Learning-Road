@@ -55,3 +55,13 @@ const dolphinsAve = (96 + 108 + 89) / 3;
 const koalasAve = (88 + 91 + 110) / 3;
 
 console.log(dolphinsAve, koalasAve);
+
+if (dolphinsAve > koalasAve && dolphinsAve > 100) {
+  console.log(`dolphins are winner ${dolphinsAve}`);
+} else if (koalasAve > dolphinsAve && koalasAve > 100) {
+  console.log(`koalas are winner ${koalasAve}`);
+} else if (dolphinsAve > 100 && koalasAve > 100 && dolphinsAve == koalasAve) {
+  console.log(`the match was draw`);
+} else {
+  console.log(`no team wins`);
+}
