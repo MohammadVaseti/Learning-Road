@@ -93,7 +93,7 @@ switch (day) {
 }
 
 // challenge 4
-// tip values 275 , 40 , 430
+// values 275 , 40 , 430
 const bill = 430;
 
 const afterCondition =
