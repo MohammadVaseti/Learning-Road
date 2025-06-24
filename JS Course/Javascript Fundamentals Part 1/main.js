@@ -91,3 +91,20 @@ switch (day) {
     console.log("none");
     break;
 }
+
+// challenge 4
+// tip values 275 , 40 , 430
+const bill = 40;
+
+const afterCondition =
+  bill >= 50 && bill <= 300
+    ? console.log(
+        `bill value is ${bill} , the tip is 15% , the final is ${
+          (bill * 15) / 100
+        } `
+      )
+    : console.log(
+        `bill value is ${bill} , the tip is 20% , the final is ${
+          bill + (bill * 20) / 100
+        } `
+      );
