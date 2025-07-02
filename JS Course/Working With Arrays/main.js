@@ -161,6 +161,10 @@ money.map(function (val, ind, money) {
 for (const m of money) {
   console.log(m * 3);
 }
+// with arrow function
+const withArrow = money.map((el, i, arr) => el * 3);
+console.log(withArrow);
+
 // *computing username
 
 // *the filter method
