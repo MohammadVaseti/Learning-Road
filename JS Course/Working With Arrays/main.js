@@ -38,6 +38,12 @@
 
 // looping array : forEach
 
+// looping Arrays forEach
+// const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+// movements.forEach(function(cv,i,arr){
+//   console.log(cv);
+// })
+
 // const arr = [1, 2, 3];
 // arr.forEach(function (value, index, arr) {
 //   console.log(value, index, arr);
