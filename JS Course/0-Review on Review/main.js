@@ -77,7 +77,7 @@ const arr2 = [5, 6, 7];
 
 // map() array Method
 
-const newArr = [1, -1, 5, -5, 2, 3];
+// const newArr = [1, -1, 5, -5, 2, 3];
 // const newArr2 = newArr.map(function (el, i, arr) {
 //   return el;
 // });
@@ -103,3 +103,5 @@ const newArr = [1, -1, 5, -5, 2, 3];
 // }, z[0]);
 
 // console.log(biggest);
+
+// #Challenge3
