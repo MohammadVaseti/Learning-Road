@@ -372,3 +372,16 @@ const dogBothActivities = breeds.find(
 ).breed;
 
 // 3.
+
+// const allActivities = breeds
+//   .map(function (v, i, arr) {
+//     return v.activities;
+//   })
+//   .flat()
+
+const allActivities = breeds.flatMap(function (v, i, arr) {
+  return v.activities;
+});
+console.log(allActivities);
+
+4;
