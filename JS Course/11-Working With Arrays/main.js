@@ -287,9 +287,15 @@
 // // //////////////
 // the findlast and find lastindex methods
 
-const arr = [1, 2, 3, 4, 5, 6];
-const lastEven = arr.findLast((el) => el % 2 === 0);
-console.log(lastEven);
+// const arr = [1, 2, 3, 4, 5, 6];
+// const lastEven = arr.findLast((el) => el % 2 === 0);
+// console.log(lastEven);
 
-const lastEvenIndex = arr.findLastIndex((el) => el % 2 === 0);
-console.log(lastEvenIndex);
+// const lastEvenIndex = arr.findLastIndex((el) => el % 2 === 0);
+// console.log(lastEvenIndex);
+
+// flat flatMap
+
+const arr = [1, 2, [3, 4], [5, [6, 7]]];
+console.log(arr.flat(1));
+console.log(arr.flat(2));
