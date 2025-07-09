@@ -385,3 +385,23 @@ const allActivities = breeds.flatMap(function (v, i, arr) {
 console.log(allActivities);
 
 // 4.
+
+const unqueActivities = [...new Set(allActivities)];
+console.log(unqueActivities);
+
+// 5.
+const swimmingAdjacent = new Set(
+  breeds
+    .map(function (v, i, arr) {
+      return v.activities;
+    })
+    .filter(function (v, i, arr) {
+      return v.includes("swimming");
+    })
+    .flatMap((el) => el)
+    .filter((el) => el !== "swimming")
+);
+
+console.log(swimmingAdjacent);
+
+// 6.
