@@ -333,7 +333,7 @@ const breeds = [
   },
   {
     breed: "Dalmatian",
-    averageWeight: 24,
+    averageWeight: 2,
     activities: ["running", "fetch", "agility"],
   },
   {
@@ -405,3 +405,11 @@ const swimmingAdjacent = new Set(
 console.log(swimmingAdjacent);
 
 // 6.
+const weights = breeds.flatMap(function (v, i, arr) {
+  return v.averageWeight;
+});
+weights >= 10 ? console.log("true") : console.log("false");
+
+// console.log(breeds.every((el) => el.averageWeight >= 10));
+
+7;
