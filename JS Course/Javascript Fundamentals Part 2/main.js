@@ -19,3 +19,29 @@ console.log(hello2());
 
 const hello3 = () => "hello3";
 console.log(hello3());
+
+// challenge# 1
+// Test data:
+// Data 1: Dolphins score 44, 23 and 71. Koalas score 65, 54 and 49
+// Data 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27
+//  1, 2.
+const formula = (a, b, c) => (a + b + c) / 3;
+// const KoalaAve = formula(65, 54, 49);
+const KoalaAve = formula(23, 34, 27);
+console.log(KoalaAve);
+// const DolphinsAve = formula(44, 23, 71);
+const DolphinsAve = formula(85, 54, 41);
+console.log(DolphinsAve);
+
+const winner = function (a, b) {
+  if (DolphinsAve > KoalaAve) {
+    console.log(`dolphins winner ${DolphinsAve} vs ${KoalaAve}`);
+  } else if (DolphinsAve < KoalaAve) {
+    console.log(`koalas winner ${DolphinsAve} vs ${KoalaAve}`);
+  } else {
+    console.log(`game was Equal ${(DolphinsAve, KoalaAve)}`);
+  }
+};
+winner(DolphinsAve, KoalaAve);
+
+// ////////////////////
