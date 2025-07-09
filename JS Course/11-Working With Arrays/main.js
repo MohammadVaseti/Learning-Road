@@ -412,4 +412,19 @@ weights >= 10 ? console.log("true") : console.log("false");
 
 // console.log(breeds.every((el) => el.averageWeight >= 10));
 
-7;
+// 7
+
+const allActive = breeds.some((el) => el.activities.length >= 3);
+console.log(allActive);
+
+// hint max weight
+
+const nums = breeds
+  .filter(function (v, i, arr) {
+    return v.activities.includes("fetch");
+  })
+  .map(function (v, i, arr) {
+    return v.averageWeight;
+  });
+console.log(nums);
+console.log(nums.reduce((acc, v, i) => (acc > v ? acc : v), nums[0]));
