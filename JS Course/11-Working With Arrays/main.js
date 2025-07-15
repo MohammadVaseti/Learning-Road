@@ -325,106 +325,119 @@
 // */
 
 // /*
-const breeds = [
-  {
-    breed: "German Shepherd",
-    averageWeight: 32,
-    activities: ["fetch", "swimming"],
-  },
-  {
-    breed: "Dalmatian",
-    averageWeight: 2,
-    activities: ["running", "fetch", "agility"],
-  },
-  {
-    breed: "Labrador",
-    averageWeight: 28,
-    activities: ["swimming", "fetch"],
-  },
-  {
-    breed: "Beagle",
-    averageWeight: 12,
-    activities: ["digging", "fetch"],
-  },
-  {
-    breed: "Husky",
-    averageWeight: 26,
-    activities: ["running", "agility", "swimming"],
-  },
-  {
-    breed: "Bulldog",
-    averageWeight: 36,
-    activities: ["sleeping"],
-  },
-  {
-    breed: "Poodle",
-    averageWeight: 18,
-    activities: ["agility", "fetch"],
-  },
+// const breeds = [
+//   {
+//     breed: "German Shepherd",
+//     averageWeight: 32,
+//     activities: ["fetch", "swimming"],
+//   },
+//   {
+//     breed: "Dalmatian",
+//     averageWeight: 2,
+//     activities: ["running", "fetch", "agility"],
+//   },
+//   {
+//     breed: "Labrador",
+//     averageWeight: 28,
+//     activities: ["swimming", "fetch"],
+//   },
+//   {
+//     breed: "Beagle",
+//     averageWeight: 12,
+//     activities: ["digging", "fetch"],
+//   },
+//   {
+//     breed: "Husky",
+//     averageWeight: 26,
+//     activities: ["running", "agility", "swimming"],
+//   },
+//   {
+//     breed: "Bulldog",
+//     averageWeight: 36,
+//     activities: ["sleeping"],
+//   },
+//   {
+//     breed: "Poodle",
+//     averageWeight: 18,
+//     activities: ["agility", "fetch"],
+//   },
+// ];
+
+// // 1.
+// const huskyWeight = breeds.find((el) => el.breed === "Husky").averageWeight;
+
+// // 2.
+// const dogBothActivities = breeds.find(
+//   (el) => el.activities.includes("fetch") && el.activities.includes("running")
+// ).breed;
+
+// // 3.
+
+// // const allActivities = breeds
+// //   .map(function (v, i, arr) {
+// //     return v.activities;
+// //   })
+// //   .flat()
+
+// const allActivities = breeds.flatMap(function (v, i, arr) {
+//   return v.activities;
+// });
+// console.log(allActivities);
+
+// // 4.
+
+// const unqueActivities = [...new Set(allActivities)];
+// console.log(unqueActivities);
+
+// // 5.
+// const swimmingAdjacent = new Set(
+//   breeds
+//     .map(function (v, i, arr) {
+//       return v.activities;
+//     })
+//     .filter(function (v, i, arr) {
+//       return v.includes("swimming");
+//     })
+//     .flatMap((el) => el)
+//     .filter((el) => el !== "swimming")
+// );
+
+// console.log(swimmingAdjacent);
+
+// // 6.
+// const weights = breeds.flatMap(function (v, i, arr) {
+//   return v.averageWeight;
+// });
+// weights >= 10 ? console.log("true") : console.log("false");
+
+// // console.log(breeds.every((el) => el.averageWeight >= 10));
+
+// // 7
+
+// const allActive = breeds.some((el) => el.activities.length >= 3);
+// console.log(allActive);
+
+// // hint max weight
+
+// const nums = breeds
+//   .filter(function (v, i, arr) {
+//     return v.activities.includes("fetch");
+//   })
+//   .map(function (v, i, arr) {
+//     return v.averageWeight;
+//   });
+// console.log(nums);
+// console.log(nums.reduce((acc, v, i) => (acc > v ? acc : v), nums[0]));
+
+//
+// Array Grouping
+
+const people = [
+  { name: "ali", age: 25 },
+  { name: "moh", age: 21 },
+  { name: "sara", age: 27 },
+  { name: "reza", age: 24 },
 ];
 
-// 1.
-const huskyWeight = breeds.find((el) => el.breed === "Husky").averageWeight;
-
-// 2.
-const dogBothActivities = breeds.find(
-  (el) => el.activities.includes("fetch") && el.activities.includes("running")
-).breed;
-
-// 3.
-
-// const allActivities = breeds
-//   .map(function (v, i, arr) {
-//     return v.activities;
-//   })
-//   .flat()
-
-const allActivities = breeds.flatMap(function (v, i, arr) {
-  return v.activities;
-});
-console.log(allActivities);
-
-// 4.
-
-const unqueActivities = [...new Set(allActivities)];
-console.log(unqueActivities);
-
-// 5.
-const swimmingAdjacent = new Set(
-  breeds
-    .map(function (v, i, arr) {
-      return v.activities;
-    })
-    .filter(function (v, i, arr) {
-      return v.includes("swimming");
-    })
-    .flatMap((el) => el)
-    .filter((el) => el !== "swimming")
-);
-
-console.log(swimmingAdjacent);
-
-// 6.
-const weights = breeds.flatMap(function (v, i, arr) {
-  return v.averageWeight;
-});
-weights >= 10 ? console.log("true") : console.log("false");
-
-// console.log(breeds.every((el) => el.averageWeight >= 10));
-
-// 7
-
-const allActive = breeds.some((el) => el.activities.length >= 3);
-console.log(allActive);
-
-// hint max weight
-
-const nums = breeds
-  .filter(function (v, i, arr) {
-    return v.activities.includes("fetch");
-  })
-  .map(function (v, i, arr) {
-    return v.averageWeight;
-  });
-console.log(nums);
-console.log(nums.reduce((acc, v, i) => (acc > v ? acc : v), nums[0]));
+const gr = Object.groupBy(people, (person) => person.age > 25);
+console.log(gr);
