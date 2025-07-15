@@ -441,3 +441,7 @@ const people = [
 
 const gr = Object.groupBy(people, (person) => person.age > 25);
 console.log(gr);
+
+const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+const grouped = Object.groupBy(nums, (num) => (num % 2 == 0 ? "zoj" : "fard"));
+console.log(grouped);
