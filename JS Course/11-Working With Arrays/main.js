@@ -451,4 +451,7 @@ const x = new Array(7);
 
 console.log(x);
 
-console.log();
+console.log(x.fill(7));
+
+const y = Array.from({ length: 5 }, (_, i) => i + 1);
+console.log(y);
