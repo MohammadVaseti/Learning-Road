@@ -432,26 +432,36 @@
 //
 // Array Grouping
 
-const people = [
-  { name: "ali", age: 25 },
-  { name: "moh", age: 21 },
-  { name: "sara", age: 27 },
-  { name: "reza", age: 24 },
-];
+// const people = [
+//   { name: "ali", age: 25 },
+//   { name: "moh", age: 21 },
+//   { name: "sara", age: 27 },
+//   { name: "reza", age: 24 },
+// ];
 
-const gr = Object.groupBy(people, (person) => person.age > 25);
-console.log(gr);
+// const gr = Object.groupBy(people, (person) => person.age > 25);
+// console.log(gr);
 
-const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
-const grouped = Object.groupBy(nums, (num) => (num % 2 == 0 ? "zoj" : "fard"));
-console.log(grouped);
+// const nums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 0];
+// const grouped = Object.groupBy(nums, (num) => (num % 2 == 0 ? "zoj" : "fard"));
+// console.log(grouped);
 
-// More Ways of Creating and Filling Arrays
-const x = new Array(7);
+// // More Ways of Creating and Filling Arrays
+// const x = new Array(7);
 
-console.log(x);
+// console.log(x);
 
-console.log(x.fill(7));
+// console.log(x.fill(7));
 
-const y = Array.from({ length: 5 }, (_, i) => i + 1);
-console.log(y);
+// const y = Array.from({ length: 5 }, (_, i) => i + 1);
+// console.log(y);
+
+//
+// Non-Destructive Alternatives: toReversed, toSorted, toSpliced, with
+
+const arr = [10, 20, 30, 40, 15];
+const newArr = arr.toReversed();
+console.log(arr, newArr);
+
+const newArr2 = arr.toSorted();
+console.log(arr, newArr2);
