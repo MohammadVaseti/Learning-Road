@@ -468,3 +468,6 @@ console.log(arr, newArr2);
 
 const newArr3 = arr.toSpliced(1, 2);
 console.log(arr, newArr3);
+
+const newArr4 = arr.with(2, 99);
+console.log(arr, newArr4);
