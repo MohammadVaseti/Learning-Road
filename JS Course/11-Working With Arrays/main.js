@@ -528,3 +528,11 @@ const saraDog = dogs.filter(function (v, i, arr) {
       : console.log(" too low");
   }
 });
+
+// 3.
+const muchow = [];
+const lowow = [];
+dogs.filter(function (v, i, arr) {
+  v.curFood > v.recFood ? muchow.push(v.owners) : lowow.push(v.owners);
+});
+console.log(muchow.flat().concat(lowow.flat()));
