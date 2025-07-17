@@ -570,3 +570,15 @@ const con = dogs.filter(
   (dog, i) => dog.curFood > dog.recFood * 0.9 && dog.curFood < dog.recFood * 1.1
 );
 console.log(con);
+
+// 8.
+const grouped = Object.groupBy(dogs, (el) => {
+  if (el.curFood === el.recFood) {
+    return "normal";
+  } else if (el.curFood > el.recFood) {
+    return "to much";
+  } else {
+    return "to low";
+  }
+});
+console.log(grouped);
