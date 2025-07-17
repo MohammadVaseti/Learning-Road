@@ -545,3 +545,24 @@ const little = dogs
   .map((v, i) => v.owners)
   .flat();
 console.log(little);
+
+// 4.
+const str1 = much.toString().replaceAll(",", " and ");
+const str2 = little.toString().replaceAll(",", " and ");
+
+console.log(`${str1} dogs eat too much / ${str2} dogs eat too little`);
+
+// 5.
+
+const equal = dogs.some((el) => el.curFood === el.recFood);
+console.log(equal);
+
+// 6.
+
+console.log(
+  dogs.every(
+    (dog) => dog.curFood > dog.recFood * 0.9 && dogcurFood < dogrecFood * 1.1
+  )
+);
+
+// 7.
