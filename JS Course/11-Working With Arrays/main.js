@@ -465,3 +465,6 @@ console.log(arr, newArr);
 
 const newArr2 = arr.toSorted();
 console.log(arr, newArr2);
+
+const newArr3 = arr.toSpliced(1, 2);
+console.log(arr, newArr3);
