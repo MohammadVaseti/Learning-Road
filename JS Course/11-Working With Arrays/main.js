@@ -595,3 +595,9 @@ const grByNum = Object.groupBy(dogs, (dog) => {
   }
 });
 console.log(grByNum);
+
+// 10.
+
+const sort = dogs.toSorted((a, b) => a.recFood - b.recFood);
+
+console.log(sort);
