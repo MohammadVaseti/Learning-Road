@@ -561,8 +561,12 @@ console.log(equal);
 
 console.log(
   dogs.every(
-    (dog) => dog.curFood > dog.recFood * 0.9 && dogcurFood < dogrecFood * 1.1
+    (dog) => dog.curFood > dog.recFood * 0.9 && dog.curFood < dog.recFood * 1.1
   )
 );
 
 // 7.
+const con = dogs.filter(
+  (dog, i) => dog.curFood > dog.recFood * 0.9 && dog.curFood < dog.recFood * 1.1
+);
+console.log(con);
