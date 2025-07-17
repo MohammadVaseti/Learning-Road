@@ -582,3 +582,16 @@ const grouped = Object.groupBy(dogs, (el) => {
   }
 });
 console.log(grouped);
+
+// 9.
+
+const grByNum = Object.groupBy(dogs, (dog) => {
+  if (dog.owners.length === 1) {
+    return 1;
+  } else if (dog.owners.length === 2) {
+    return 2;
+  } else {
+    return 3;
+  }
+});
+console.log(grByNum);
