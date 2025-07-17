@@ -515,7 +515,7 @@ const dogs = [
 
 // 1.
 dogs.forEach(function (dog, i, arr) {
-  dog.recFood = Math.round(dog.weight ** 0.75 * 28);
+  dog.recFood = Math.floor(dog.weight ** 0.75 * 28);
 });
 console.log(dogs);
 
@@ -530,9 +530,18 @@ const saraDog = dogs.filter(function (v, i, arr) {
 });
 
 // 3.
-const muchow = [];
-const lowow = [];
-dogs.filter(function (v, i, arr) {
-  v.curFood > v.recFood ? muchow.push(v.owners) : lowow.push(v.owners);
-});
-console.log(muchow.flat().concat(lowow.flat()));
+const much = dogs
+  .filter(function (v, i, arr) {
+    return v.curFood > v.recFood;
+  })
+  .map((v, i) => v.owners)
+  .flat();
+console.log(much);
+
+const little = dogs
+  .filter(function (v, i, arr) {
+    return v.curFood < v.recFood;
+  })
+  .map((v, i) => v.owners)
+  .flat();
+console.log(little);
