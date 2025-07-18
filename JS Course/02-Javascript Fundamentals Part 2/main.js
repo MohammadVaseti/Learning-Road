@@ -19,3 +19,5 @@ console.log(hello2());
 
 const hello3 = () => "hello3";
 console.log(hello3());
+
+// challenge #2
