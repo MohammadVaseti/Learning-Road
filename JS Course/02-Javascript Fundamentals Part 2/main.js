@@ -21,11 +21,10 @@ const hello3 = () => "hello3";
 console.log(hello3());
 
 // challenge #2
-const calcTip = function (bill) {
-  let tip = 0;
-  bill > 30 && bill < 500 ? (tip = 0.15 * bill) : (tip = 0.2 * bill);
-  const tips = [];
-  const total = tip + bill;
-  return total;
-};
-console.log(calcTip(500));
+const data = [125, 500, 400];
+
+let tip = 0;
+data.map((el) => {
+  el > 30 && el < 500 ? (tip = 0.15 * el) : (tip = 0.2 * el);
+  return console.log(tip + el);
+});
