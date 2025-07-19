@@ -45,3 +45,12 @@ const winner = function (a, b) {
 winner(DolphinsAve, KoalaAve);
 
 // ////////////////////
+
+// challenge #2
+const data = [125, 500, 400];
+
+let tip = 0;
+data.map((el) => {
+  el > 30 && el < 500 ? (tip = 0.15 * el) : (tip = 0.2 * el);
+  return console.log(tip + el);
+});
