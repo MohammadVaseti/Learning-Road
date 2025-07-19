@@ -24,3 +24,15 @@ console.log(Math.max(2, 7, 56));
 
 const ranInt = (min, max) => Math.trunc(Math.random() * (max - min)) + min;
 console.log(ranInt(5, 25));
+
+console.log(Math.trunc(23.3));
+console.log(Math.floor(23.3));
+console.log(Math.ceil(23.3));
+console.log(Math.round(20.3));
+console.log(Math.round(20.9));
+
+console.log(Math.trunc(-25.2));
+console.log(Math.floor(-25.2));
+
+let num = 3.141516;
+console.log(+num.toFixed(2));
