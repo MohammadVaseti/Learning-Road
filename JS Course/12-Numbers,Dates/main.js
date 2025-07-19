@@ -36,3 +36,20 @@ console.log(Math.floor(-25.2));
 
 let num = 3.141516;
 console.log(+num.toFixed(2));
+
+// Remainder operator
+console.log(5 % 2);
+const isEven = (num) =>
+  num % 2 === 0 ? console.log("even") : console.log("odd");
+isEven(5);
+isEven(8);
+isEven(0);
+
+// numeric Seprator
+
+const diameter = 100_000_000;
+console.log(diameter);
+const diameter2 = "100_000_000";
+console.log(diameter2);
+const diameter3 = Number("100_000_000");
+console.log(diameter3);
