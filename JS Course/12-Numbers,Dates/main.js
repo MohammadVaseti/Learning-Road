@@ -53,3 +53,18 @@ const diameter2 = "100_000_000";
 console.log(diameter2);
 const diameter3 = Number("100_000_000");
 console.log(diameter3);
+
+// working with BigInt
+
+console.log(122222333344444555566667778888999n);
+console.log(BigInt(12121211133334442200000099988000));
+console.log(12n / 4n);
+console.log(13n / 4n);
+// console.log(12n > 23);!!!!!!!!!!!!!!!! false
+
+// console.log(2n + 4); error
+
+console.log(4n * 4n);
+
+// or you can use BigInt() to create
+console.log(BigInt(23));
