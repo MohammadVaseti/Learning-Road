@@ -76,5 +76,6 @@ console.log(now);
 console.log(now.getFullYear());
 console.log(now.getMonth());
 console.log(Date.now());
-console.log(new Date(Date.now()));
-console.log(new Date(33344445555600));
+console.log(new Date());
+
+// console.log(new Date(33344445555600));
