@@ -74,6 +74,7 @@ const now = new Date();
 
 console.log(now);
 console.log(now.getFullYear());
+// FullYear Recomended
 console.log(now.getMonth());
 console.log(Date.now());
 console.log(new Date());
