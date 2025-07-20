@@ -68,3 +68,13 @@ console.log(4n * 4n);
 
 // or you can use BigInt() to create
 console.log(BigInt(23));
+
+// creatin date
+const now = new Date();
+
+console.log(now);
+console.log(now.getFullYear());
+console.log(now.getMonth());
+console.log(Date.now());
+console.log(new Date(Date.now()));
+console.log(new Date(33344445555600));
