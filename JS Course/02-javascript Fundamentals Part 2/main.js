@@ -61,3 +61,11 @@ const myInfo = {
   name: "mohammad",
   age: 27,
 };
+
+const myInfo2 = new Object();
+myInfo2.job = "frontend developer";
+myInfo2.hobby = "reading book";
+
+console.log(myInfo);
+console.log("////");
+console.log(myInfo2);
