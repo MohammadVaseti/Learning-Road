@@ -54,3 +54,10 @@ data.map((el) => {
   el > 30 && el < 500 ? (tip = 0.15 * el) : (tip = 0.2 * el);
   return console.log(tip + el);
 });
+// introduction to objectes
+
+// object literal
+const myInfo = {
+  name: "mohammad",
+  age: 27,
+};
