@@ -83,3 +83,27 @@ console.log(myInfo2);
 
 const add = "Zone";
 console.log(myInfo["time" + add]);
+
+// # challenge 3
+
+const markObj = {
+  fullName: "mark miller",
+  mass: 78,
+  height: 1.69,
+};
+
+const johnObj = {
+  fullName: " john smith",
+  mass: 92,
+  height: 1.95,
+};
+markObj.calcBmi = markObj.mass / markObj.height ** 2;
+johnObj.calcBmi = johnObj.mass / johnObj.height ** 2;
+
+console.log(markObj, johnObj);
+
+if (johnObj.calcBmi > markObj.calcBmi) {
+  console.log(`${johnObj.fullName} greater ${johnObj.calcBmi}`);
+} else {
+  console.log(`${markObj.fullName} greater ${markObj.calcBmi}`);
+}
