@@ -69,3 +69,17 @@ myInfo2.hobby = "reading book";
 console.log(myInfo);
 console.log("////");
 console.log(myInfo2);
+
+// Dot vs. Bracket Notation
+console.log(myInfo.name);
+console.log(myInfo["name"]);
+
+myInfo.loc = "iran";
+myInfo2["loc"] = "tehran";
+myInfo["timeZone"] = 22;
+console.log(myInfo);
+console.log("////");
+console.log(myInfo2);
+
+const add = "Zone";
+console.log(myInfo["time" + add]);
