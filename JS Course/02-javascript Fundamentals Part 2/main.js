@@ -107,3 +107,11 @@ if (johnObj.calcBmi > markObj.calcBmi) {
 } else {
   console.log(`${markObj.fullName} greater ${markObj.calcBmi}`);
 }
+// object method
+const newObj = {
+  name: "ali",
+  func: function () {
+    return `${this.name} is my name`;
+  },
+};
+console.log(newObj["func"]());
