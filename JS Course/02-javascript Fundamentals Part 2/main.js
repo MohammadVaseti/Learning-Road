@@ -84,6 +84,15 @@ console.log(myInfo2);
 const add = "Zone";
 console.log(myInfo["time" + add]);
 
+// object method
+const newObj = {
+  name: "ali",
+  func: function () {
+    return `${this.name} is my name`;
+  },
+};
+console.log(newObj["func"]());
+
 // # challenge 3
 
 const markObj = {
@@ -107,11 +116,3 @@ if (johnObj.calcBmi > markObj.calcBmi) {
 } else {
   console.log(`${markObj.fullName} greater ${markObj.calcBmi}`);
 }
-// object method
-const newObj = {
-  name: "ali",
-  func: function () {
-    return `${this.name} is my name`;
-  },
-};
-console.log(newObj["func"]());
