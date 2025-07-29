@@ -116,3 +116,7 @@ if (johnObj.calcBmi > markObj.calcBmi) {
 } else {
   console.log(`${markObj.fullName} greater ${markObj.calcBmi}`);
 }
+
+for (let i = 0; i <= 10; i++) {
+  console.log(i);
+}
