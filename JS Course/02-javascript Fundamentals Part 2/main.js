@@ -1,142 +1,165 @@
-// Activating Strict Mode
+// // Activating Strict Mode
 "use strict";
 
-// functions / declaration vs expression / arrow
+// // functions / declaration vs expression / arrow
 
-// delaration
-function hello() {
-  return "hello";
-}
-console.log(hello());
+// // delaration
+// function hello() {
+//   return "hello";
+// }
+// console.log(hello());
 
-// expression
-const hello2 = function () {
-  return "hello2";
-};
-console.log(hello2());
+// // expression
+// const hello2 = function () {
+//   return "hello2";
+// };
+// console.log(hello2());
 
-// arrow
+// // arrow
 
-const hello3 = () => "hello3";
-console.log(hello3());
+// const hello3 = () => "hello3";
+// console.log(hello3());
 
-// challenge# 1
-// Test data:
-// Data 1: Dolphins score 44, 23 and 71. Koalas score 65, 54 and 49
-// Data 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27
-//  1, 2.
-const formula = (a, b, c) => (a + b + c) / 3;
-// const KoalaAve = formula(65, 54, 49);
-const KoalaAve = formula(23, 34, 27);
-console.log(KoalaAve);
-// const DolphinsAve = formula(44, 23, 71);
-const DolphinsAve = formula(85, 54, 41);
-console.log(DolphinsAve);
+// // challenge# 1
+// // Test data:
+// // Data 1: Dolphins score 44, 23 and 71. Koalas score 65, 54 and 49
+// // Data 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27
+// //  1, 2.
+// const formula = (a, b, c) => (a + b + c) / 3;
+// // const KoalaAve = formula(65, 54, 49);
+// const KoalaAve = formula(23, 34, 27);
+// console.log(KoalaAve);
+// // const DolphinsAve = formula(44, 23, 71);
+// const DolphinsAve = formula(85, 54, 41);
+// console.log(DolphinsAve);
 
-const winner = function (a, b) {
-  if (DolphinsAve > KoalaAve) {
-    console.log(`dolphins winner ${DolphinsAve} vs ${KoalaAve}`);
-  } else if (DolphinsAve < KoalaAve) {
-    console.log(`koalas winner ${DolphinsAve} vs ${KoalaAve}`);
+// const winner = function (a, b) {
+//   if (DolphinsAve > KoalaAve) {
+//     console.log(`dolphins winner ${DolphinsAve} vs ${KoalaAve}`);
+//   } else if (DolphinsAve < KoalaAve) {
+//     console.log(`koalas winner ${DolphinsAve} vs ${KoalaAve}`);
+//   } else {
+//     console.log(`game was Equal ${(DolphinsAve, KoalaAve)}`);
+//   }
+// };
+// winner(DolphinsAve, KoalaAve);
+
+// // ////////////////////
+
+// // challenge #2
+// const data = [125, 500, 400];
+
+// let tip = 0;
+// data.map((el) => {
+//   el > 30 && el < 500 ? (tip = 0.15 * el) : (tip = 0.2 * el);
+//   return console.log(tip + el);
+// });
+// // introduction to objectes
+
+// // object literal
+// const myInfo = {
+//   name: "mohammad",
+//   age: 27,
+// };
+
+// const myInfo2 = new Object();
+// myInfo2.job = "frontend developer";
+// myInfo2.hobby = "reading book";
+
+// console.log(myInfo);
+// console.log("////");
+// console.log(myInfo2);
+
+// // Dot vs. Bracket Notation
+// console.log(myInfo.name);
+// console.log(myInfo["name"]);
+
+// myInfo.loc = "iran";
+// myInfo2["loc"] = "tehran";
+// myInfo["timeZone"] = 22;
+// console.log(myInfo);
+// console.log("////");
+// console.log(myInfo2);
+
+// const add = "Zone";
+// console.log(myInfo["time" + add]);
+
+// // object method
+// const newObj = {
+//   name: "ali",
+//   func: function () {
+//     return `${this.name} is my name`;
+//   },
+// };
+// console.log(newObj["func"]());
+
+// // # challenge 3
+
+// const markObj = {
+//   fullName: "mark miller",
+//   mass: 78,
+//   height: 1.69,
+// };
+
+// const johnObj = {
+//   fullName: " john smith",
+//   mass: 92,
+//   height: 1.95,
+// };
+// markObj.calcBmi = markObj.mass / markObj.height ** 2;
+// johnObj.calcBmi = johnObj.mass / johnObj.height ** 2;
+
+// console.log(markObj, johnObj);
+
+// if (johnObj.calcBmi > markObj.calcBmi) {
+//   console.log(`${johnObj.fullName} greater ${johnObj.calcBmi}`);
+// } else {
+//   console.log(`${markObj.fullName} greater ${markObj.calcBmi}`);
+// }
+
+// for (let i = 0; i <= 10; i++) {
+//   console.log(i);
+// }
+// // Looping Arrays, Breaking and Continuing
+
+// for (let i = 0; i <= 10; i++) {
+//   if (i % 2 == 0) continue;
+//   else console.log(i);
+// }
+
+// for (let i = 0; i <= 10; i++) {
+//   if (i == 5) break;
+//   else console.log(i);
+// }
+// // looping backward and loops in loops
+
+// for (let exercise = 1; exercise <= 3; exercise++) {
+//   console.log(`-------- Starting exercise ${exercise} --------`);
+
+//   for (let rep = 1; rep <= 5; rep++) {
+//     console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}`);
+//   }
+// }
+// challenge # 4
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+const tips = [];
+const totals = [];
+
+for (let index = 0; index <= bills.length - 1; index++) {
+  let tip;
+  let total;
+
+  if (index > 30 && index < 500) {
+    tip = 0.15 * bills[index];
+    tips.push(tip);
+    total = tip + bills[index];
+    totals.push(total);
   } else {
-    console.log(`game was Equal ${(DolphinsAve, KoalaAve)}`);
-  }
-};
-winner(DolphinsAve, KoalaAve);
-
-// ////////////////////
-
-// challenge #2
-const data = [125, 500, 400];
-
-let tip = 0;
-data.map((el) => {
-  el > 30 && el < 500 ? (tip = 0.15 * el) : (tip = 0.2 * el);
-  return console.log(tip + el);
-});
-// introduction to objectes
-
-// object literal
-const myInfo = {
-  name: "mohammad",
-  age: 27,
-};
-
-const myInfo2 = new Object();
-myInfo2.job = "frontend developer";
-myInfo2.hobby = "reading book";
-
-console.log(myInfo);
-console.log("////");
-console.log(myInfo2);
-
-// Dot vs. Bracket Notation
-console.log(myInfo.name);
-console.log(myInfo["name"]);
-
-myInfo.loc = "iran";
-myInfo2["loc"] = "tehran";
-myInfo["timeZone"] = 22;
-console.log(myInfo);
-console.log("////");
-console.log(myInfo2);
-
-const add = "Zone";
-console.log(myInfo["time" + add]);
-
-// object method
-const newObj = {
-  name: "ali",
-  func: function () {
-    return `${this.name} is my name`;
-  },
-};
-console.log(newObj["func"]());
-
-// # challenge 3
-
-const markObj = {
-  fullName: "mark miller",
-  mass: 78,
-  height: 1.69,
-};
-
-const johnObj = {
-  fullName: " john smith",
-  mass: 92,
-  height: 1.95,
-};
-markObj.calcBmi = markObj.mass / markObj.height ** 2;
-johnObj.calcBmi = johnObj.mass / johnObj.height ** 2;
-
-console.log(markObj, johnObj);
-
-if (johnObj.calcBmi > markObj.calcBmi) {
-  console.log(`${johnObj.fullName} greater ${johnObj.calcBmi}`);
-} else {
-  console.log(`${markObj.fullName} greater ${markObj.calcBmi}`);
-}
-
-for (let i = 0; i <= 10; i++) {
-  console.log(i);
-}
-// Looping Arrays, Breaking and Continuing
-
-for (let i = 0; i <= 10; i++) {
-  if (i % 2 == 0) continue;
-  else console.log(i);
-}
-
-for (let i = 0; i <= 10; i++) {
-  if (i == 5) break;
-  else console.log(i);
-}
-// looping backward and loops in loops
-
-for (let exercise = 1; exercise <= 3; exercise++) {
-  console.log(`-------- Starting exercise ${exercise} --------`);
-
-  for (let rep = 1; rep <= 5; rep++) {
-    console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}`);
+    tip = 0.2 * bills[index];
+    tips.push(tip);
+    total = tip + bills[index];
+    totals.push(total);
   }
 }
+console.log(`total = ${totals.flat()}`);
+console.log(`tips = ${tips.flat()}`);
