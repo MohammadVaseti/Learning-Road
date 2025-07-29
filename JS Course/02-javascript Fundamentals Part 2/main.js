@@ -149,7 +149,7 @@ for (let index = 0; index <= bills.length - 1; index++) {
   let tip;
   let total;
 
-  if (index > 30 && index < 500) {
+  if (bills[index] > 30 && bills[index] < 500) {
     tip = 0.15 * bills[index];
     tips.push(tip);
     total = tip + bills[index];
@@ -161,5 +161,6 @@ for (let index = 0; index <= bills.length - 1; index++) {
     totals.push(total);
   }
 }
-console.log(`total = ${totals.flat()}`);
+console.log(`bills = ${bills.flat()}`);
 console.log(`tips = ${tips.flat()}`);
+console.log(`total = ${totals.flat()}`);
