@@ -164,3 +164,11 @@ for (let index = 0; index <= bills.length - 1; index++) {
 console.log(`bills = ${bills.flat()}`);
 console.log(`tips = ${tips.flat()}`);
 console.log(`total = ${totals.flat()}`);
+
+// while loop
+
+let num = 0;
+while (num <= 10) {
+  console.log(num);
+  num++;
+}
