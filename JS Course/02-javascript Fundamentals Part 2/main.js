@@ -131,3 +131,12 @@ for (let i = 0; i <= 10; i++) {
   if (i == 5) break;
   else console.log(i);
 }
+// looping backward and loops in loops
+
+for (let exercise = 1; exercise <= 3; exercise++) {
+  console.log(`-------- Starting exercise ${exercise} --------`);
+
+  for (let rep = 1; rep <= 5; rep++) {
+    console.log(`Exercise ${exercise}: Lifting weight repetition ${rep}`);
+  }
+}
