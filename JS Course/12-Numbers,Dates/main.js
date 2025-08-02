@@ -83,7 +83,10 @@ console.log(new Date());
 
 // operations with dates
 
-const future = new Date(2037, 4, 15, 10, 30);
-const newNow = new Date();
+const future = new Date(2025, 12, 29);
+const newNow = new Date(2025, 8, 2);
+console.log(newNow);
 console.log(future - now);
-con;
+const calcDayPassed = (day2, day1) =>
+  Math.round(Math.abs(+day2 - +day1) / (1000 * 60 * 60 * 24));
+console.log(calcDayPassed(future, newNow));
