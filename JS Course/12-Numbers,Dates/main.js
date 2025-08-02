@@ -80,3 +80,10 @@ console.log(Date.now());
 console.log(new Date());
 
 // console.log(new Date(33344445555600));
+
+// operations with dates
+
+const future = new Date(2037, 4, 15, 10, 30);
+const newNow = new Date();
+console.log(future - now);
+con;
