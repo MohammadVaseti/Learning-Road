@@ -90,3 +90,20 @@ console.log(future - now);
 const calcDayPassed = (day2, day1) =>
   Math.round(Math.abs(+day2 - +day1) / (1000 * 60 * 60 * 24));
 console.log(calcDayPassed(future, newNow));
+
+const now2 = new Date();
+
+console.log(new Intl.DateTimeFormat("en-US").format(now));
+console.log(new Intl.DateTimeFormat("en-GB").format(now));
+console.log(new Intl.DateTimeFormat("fa-IR").format(now));
+
+const locale = "en-US";
+const options = {
+  day: "numeric",
+  month: "long",
+  year: "numeric",
+  weekday: "short",
+};
+
+console.log(new Intl.DateTimeFormat(locale, options).format(now2));
+console.log(new Intl.DateTimeFormat("de-DE", options).format(now2));
