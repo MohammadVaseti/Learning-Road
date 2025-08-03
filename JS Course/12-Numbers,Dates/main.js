@@ -109,10 +109,10 @@ console.log(new Intl.DateTimeFormat(locale, options).format(now2));
 console.log(new Intl.DateTimeFormat("de-DE", options).format(now2));
 
 // Internationalizing Numbers (Intl)
-
+const locale2 = navigator.language;
 const num3 = 232466.9;
 const options2 = {
   style: "currency",
-  currency: "EUR",
+  currency: "IRR",
 };
-console.log(new Intl.NumberFormat("en-US", options2).format(num3));
+console.log(new Intl.NumberFormat(locale2, options2).format(num3));
