@@ -116,3 +116,11 @@ const options2 = {
   currency: "IRR",
 };
 console.log(new Intl.NumberFormat(locale2, options2).format(num3));
+
+// Timers: setTimeout and setInterval
+setTimeout(() => console.log("after 5s delay"), 5000);
+console.log("asyncronous js");
+
+const now3 = new Date().getHours();
+const delay = setInterval(() => console.log(now3), 2000);
+clearTimeout(delay);
