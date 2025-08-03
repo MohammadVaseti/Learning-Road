@@ -107,3 +107,12 @@ const options = {
 
 console.log(new Intl.DateTimeFormat(locale, options).format(now2));
 console.log(new Intl.DateTimeFormat("de-DE", options).format(now2));
+
+// Internationalizing Numbers (Intl)
+
+const num3 = 232466.9;
+const options2 = {
+  style: "currency",
+  currency: "EUR",
+};
+console.log(new Intl.NumberFormat("en-US", options2).format(num3));
