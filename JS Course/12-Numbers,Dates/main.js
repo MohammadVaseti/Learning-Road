@@ -124,3 +124,14 @@ console.log("asyncronous js");
 const now3 = new Date().getHours();
 const delay = setInterval(() => console.log(now3), 2000);
 clearTimeout(delay);
+
+// Implementing a Countdown Timer
+// just for test lecture
+let time = 100;
+const timer = setInterval(() => {
+  time--;
+  document.querySelector("body").innerHTML = time;
+  if (time == 95) {
+    clearInterval(timer);
+  }
+}, 1000);
