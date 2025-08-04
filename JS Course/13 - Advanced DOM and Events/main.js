@@ -7,10 +7,17 @@ console.log(p);
 p.forEach((e, i, arr) => console.log(e));
 
 // Selecting, Creating, and Deleting Elements
-const header = document.querySelector("body");
-console.log(header);
+console.log(document);
+console.log(document.documentElement); // <html>
+console.log(document.head); // <head>
+console.log(document.body); // <body>
+
+const body = document.querySelector("body");
+console.log(body);
 
 const message = document.createElement("p");
 message.classList.add("para");
 message.innerHTML = `hello <button>click</button> `;
-header.prepend(message);
+body.after(message);
+
+// message.remove();
