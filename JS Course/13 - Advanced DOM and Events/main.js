@@ -21,3 +21,12 @@ message.innerHTML = `hello <button>click</button> `;
 body.after(message);
 
 // message.remove();
+
+// Styles, Attributes and Classes
+
+message.style.backgroundColor = "red";
+console.log(message.style.backgroundColor);
+// if not set
+console.log(message.style.height);
+
+console.log(getComputedStyle(message).backgroundColor);
