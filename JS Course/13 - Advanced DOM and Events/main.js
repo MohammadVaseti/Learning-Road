@@ -30,3 +30,11 @@ console.log(message.style.backgroundColor);
 console.log(message.style.height);
 
 console.log(getComputedStyle(message).backgroundColor);
+
+//Implementing Smooth Scrolling
+const btn = document.querySelector(".btn");
+const sec = document.querySelector(".section");
+
+btn.addEventListener("click", (e) => {
+  sec.scrollIntoView({ behavior: "smooth" });
+});
