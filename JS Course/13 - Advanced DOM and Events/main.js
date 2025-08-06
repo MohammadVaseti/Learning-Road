@@ -41,7 +41,10 @@ btn.addEventListener("click", (e) => {
 
 //Types of Events and Event Handlers
 
-sec.addEventListener("mouseleave", () => alert("bye"));
+const leave = () => alert("bye");
+sec.addEventListener("mouseleave", leave);
+
 sec.onmouseenter = function () {
   alert("You entered the heading!");
 };
+sec.removeEventListener("mouseleave", leave);
