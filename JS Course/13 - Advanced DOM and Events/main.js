@@ -38,3 +38,7 @@ const sec = document.querySelector(".section");
 btn.addEventListener("click", (e) => {
   sec.scrollIntoView({ behavior: "smooth" });
 });
+
+//Types of Events and Event Handlers
+
+sec.addEventListener("mouseleave", () => alert("hello"));
