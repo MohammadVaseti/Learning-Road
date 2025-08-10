@@ -29,7 +29,7 @@ console.log(message.style.backgroundColor);
 // if not set
 console.log(message.style.height);
 
-console.log(getComputedStyle(message).backgroundColor);
+// console.log(getComputedStyle(message).backgroundColor);
 
 //Implementing Smooth Scrolling
 const btn = document.querySelector(".btn");
@@ -52,3 +52,12 @@ sec.removeEventListener("mouseleave", leave);
 //Event Propagation in Practice
 
 // random bg color
+
+const randbg = (min, max) => {
+  return Math.floor(Math.random() * max) + min;
+};
+
+body.style.backgroundColor = `rgb(${randbg(0, 255)},${randbg(0, 255)},${randbg(
+  0,
+  255
+)})`;
