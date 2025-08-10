@@ -57,7 +57,9 @@ const randbg = (min, max) => {
   return Math.floor(Math.random() * max) + min;
 };
 
-body.style.backgroundColor = `rgb(${randbg(0, 255)},${randbg(0, 255)},${randbg(
-  0,
-  255
-)})`;
+setInterval(() => {
+  body.style.backgroundColor = `rgb(${randbg(0, 255)},${randbg(
+    0,
+    255
+  )},${randbg(0, 255)})`;
+}, 1000);
