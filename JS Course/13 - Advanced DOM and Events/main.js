@@ -84,3 +84,11 @@ document.querySelector(".nav").addEventListener("click", function (e) {
   this.style.backgroundColor = randomColor();
 });
 ///////////////////////////////
+
+// DOM traversy
+
+const h1 = document.querySelector("h1");
+console.log(h1.childNodes);
+console.log(h1.parentElement);
+console.log(h1.parentNode);
+console.log(h1.closest("body"));
