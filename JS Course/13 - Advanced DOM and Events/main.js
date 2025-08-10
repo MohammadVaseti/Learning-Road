@@ -48,3 +48,7 @@ sec.onmouseenter = function () {
   alert("You entered the heading!");
 };
 sec.removeEventListener("mouseleave", leave);
+
+//Event Propagation in Practice
+
+// random bg color
