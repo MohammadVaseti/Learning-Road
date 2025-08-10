@@ -53,13 +53,34 @@ sec.removeEventListener("mouseleave", leave);
 
 // random bg color
 
-const randbg = (min, max) => {
+const randomColor = (min, max) => {
   return Math.floor(Math.random() * max) + min;
 };
 
 setInterval(() => {
-  body.style.backgroundColor = `rgb(${randbg(0, 255)},${randbg(
+  body.style.backgroundColor = `rgb(${randomColor(0, 255)},${randomColor(
     0,
     255
-  )},${randbg(0, 255)})`;
+  )},${randomColor(0, 255)})`;
 }, 1000);
+
+// propagation
+document.querySelector(".nav__link").addEventListener(
+  "click",
+  function (e) {
+    console.log("LINK", e.target, e.currentTarget);
+    this.style.backgroundColor = randomColor();
+  },
+  true
+);
+
+document.querySelector(".nav__links").addEventListener("click", function (e) {
+  console.log("CONTAINER", e.target, e.currentTarget);
+  this.style.backgroundColor = randomColor();
+});
+
+document.querySelector(".nav").addEventListener("click", function (e) {
+  console.log("NAV", e.target, e.currentTarget);
+  this.style.backgroundColor = randomColor();
+});
+///////////////////////////////
