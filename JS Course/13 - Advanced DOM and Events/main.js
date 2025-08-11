@@ -97,8 +97,8 @@
 const element = document.querySelector(".section23");
 const options = {
   root: null,
-  treshhold: 0.1,
-  rootMargin: "0px",
+  treshhold: 1,
+  rootMargin: "-500px",
 };
 const observer = new IntersectionObserver(function (entries, observer) {
   entries.forEach((entry) => (entry.target.style.fontSize = "200px"));
