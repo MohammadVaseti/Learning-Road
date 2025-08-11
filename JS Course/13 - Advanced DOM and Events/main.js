@@ -97,7 +97,7 @@
 const element = document.querySelector(".section23");
 const options = {
   root: null,
-  treshhold: 1,
+  threshhold: 0.15,
   rootMargin: "-500px",
 };
 const observer = new IntersectionObserver(function (entries, observer) {
@@ -105,3 +105,4 @@ const observer = new IntersectionObserver(function (entries, observer) {
 }, options);
 
 observer.observe(element);
+// /////////////////
