@@ -92,3 +92,7 @@ console.log(h1.childNodes);
 console.log(h1.parentElement);
 console.log(h1.parentNode);
 console.log(h1.closest("body"));
+
+// a better way the intersection observer API
+
+const observer = new IntersectionObserver(callback, options);
