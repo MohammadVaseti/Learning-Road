@@ -108,6 +108,11 @@
 // /////////////////
 
 // Lifecycle DOM Events
+
 document.addEventListener("DOMContentLoaded", function (e) {
   console.log("html parsed dom tree built", e);
+});
+
+window.addEventListener("load", function (e) {
+  console.log("Page fully loaded", e);
 });
