@@ -94,15 +94,20 @@
 // console.log(h1.closest("body"));
 
 // a better way the intersection observer API
-const element = document.querySelector(".section23");
-const options = {
-  root: null,
-  threshhold: 0.15,
-  rootMargin: "-500px",
-};
-const observer = new IntersectionObserver(function (entries, observer) {
-  entries.forEach((entry) => (entry.target.style.fontSize = "200px"));
-}, options);
+// const element = document.querySelector(".section23");
+// const options = {
+//   root: null,
+//   threshold: 0,
+//   rootMargin: "0px",
+// };
+// const observer = new IntersectionObserver(function (entries, observer) {
+//   entries.forEach((entry) => (entry.target.style.fontSize = "200px"));
+// }, options);
 
-observer.observe(element);
+// observer.observe(element);
 // /////////////////
+
+// Lifecycle DOM Events
+document.addEventListener("DOMContentLoaded", function (e) {
+  console.log("html parsed dom tree built", e);
+});
