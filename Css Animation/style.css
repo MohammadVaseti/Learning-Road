@@ -1,10 +1,7 @@
 div {
   width: 15%;
   height: 40px;
-  background-color: red;
-  /* animation: changeColor 3s timing-function delay iteration-count direction
-    fill-mode; */
-  animation: changeColor 10s infinite alternate;
+  animation: move 2s infinite alternate, changeColor 4s infinite;
 }
 @keyframes changeColor {
   0% {
@@ -15,5 +12,13 @@ div {
   }
   100% {
     background-color: rgb(0, 255, 136);
+  }
+}
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(200px);
   }
 }
