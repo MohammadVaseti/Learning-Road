@@ -2,6 +2,7 @@ div {
   width: 15%;
   height: 40px;
   animation: move 2s infinite alternate, changeColor 4s infinite;
+  animation-timing-function: ease-in-out;
 }
 @keyframes changeColor {
   0% {
