@@ -1,12 +1,13 @@
 @import "./variables";
-@mixin flexcenter {
+@mixin flexcenter($dir) {
   height: 100vh;
   display: flex;
   justify-content: center;
+  flex-direction: $dir;
 }
 @import "./h1";
 
 header {
-  @include flexcenter();
+  @include flexcenter(column);
   background-color: $primaryCol;
 }
