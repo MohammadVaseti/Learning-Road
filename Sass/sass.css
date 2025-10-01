@@ -1,0 +1,12 @@
+h1 {
+  color: rgb(0, 255, 13);
+}
+
+h1:hover {
+  color: sandybrown;
+}
+
+header {
+  background-color: rgb(195, 31, 138);
+  display: flex;
+}/*# sourceMappingURL=sass.css.map */
