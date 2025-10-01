@@ -1,8 +1,12 @@
-@import "./variables.scss";
-
+@import "./variables";
+@mixin flexcenter {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+}
 @import "./h1";
 
 header {
+  @include flexcenter();
   background-color: $primaryCol;
-  display: flex;
 }

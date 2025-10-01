@@ -7,6 +7,8 @@ h1:hover {
 }
 
 header {
-  background-color: rgb(195, 31, 138);
+  height: 100vh;
   display: flex;
+  justify-content: center;
+  background-color: rgb(195, 31, 138);
 }/*# sourceMappingURL=sass.css.map */
