@@ -8,16 +8,16 @@
 
 // with async
 
-async function getUsers(params) {
-  try {
-    const resp = await fetch("https://jsonplaceholder.typicode.com/posts/3");
-    const data = await resp.json();
-    console.log(data);
-  } catch (error) {
-    console.log("error", error);
-  }
-}
-getUsers();
+// async function getUsers(params) {
+//   try {
+//     const resp = await fetch("https://jsonplaceholder.typicode.com/posts/3");
+//     const data = await resp.json();
+//     console.log(data);
+//   } catch (error) {
+//     console.log("error", error);
+//   }
+// }
+// getUsers();
 
 // review
 
@@ -26,8 +26,14 @@ fetch("https://jsonplaceholder.typicode.com/posts/5")
   .then((data) => console.log(data));
 
 async function users(params) {
-  const response = await fetch("https://jsonplaceholder.typicode.com/posts/10");
-  const data = await response.json();
-  console.log(data);
+  try {
+    const response = await fetch(
+      "https://jsonplaceholder.typicode.com/posts/10"
+    );
+    const data = await response.json();
+    console.log(data);
+  } catch (err) {
+    console.log("err", err);
+  }
 }
 users();
