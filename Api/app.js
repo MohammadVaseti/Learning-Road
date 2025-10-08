@@ -18,3 +18,16 @@ async function getUsers(params) {
   }
 }
 getUsers();
+
+// review
+
+fetch("https://jsonplaceholder.typicode.com/posts/5")
+  .then((respnse) => respnse.json())
+  .then((data) => console.log(data));
+
+async function users(params) {
+  const response = await fetch("https://jsonplaceholder.typicode.com/posts/10");
+  const data = await response.json();
+  console.log(data);
+}
+users();
