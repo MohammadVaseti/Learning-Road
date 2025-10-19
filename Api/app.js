@@ -37,3 +37,22 @@ async function users(params) {
   }
 }
 users();
+
+async function createUser() {
+  const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
+    method: "POST", // نوع درخواست
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+      title: "سلام از محمدحسین!",
+      body: "این اولین پست POST من با async/await هست",
+      userId: 3,
+    }),
+  });
+
+  const data = await response.json();
+  console.log(data);
+}
+
+createUser();
