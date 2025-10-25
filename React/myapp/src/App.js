@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import "./App.css";
+import Welcome from "./Components/Welcome";
 
 function App() {
   function username(user) {
@@ -16,6 +17,9 @@ function App() {
       <div>{name}</div>
       <div>{element}</div>
       <div>{username(userObj)}</div>
+      <>
+        <Welcome></Welcome>
+      </>
     </div>
   );
 }
