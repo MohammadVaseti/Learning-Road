@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import "./App.css";
 import Welcome from "./Components/Welcome";
+import Practical from "./Components/Practical";
 
 function App() {
   function username(user) {
@@ -21,6 +22,19 @@ function App() {
         <Welcome user="saadoun"></Welcome>
         <Welcome user="nini"></Welcome>
         <Welcome user="rafiq"></Welcome>
+      </>
+
+      <>
+        <Practical name="mohammad"></Practical>
+      </>
+      <>
+        <Practical name="ali"></Practical>
+      </>
+      <>
+        <Practical name="hossein"></Practical>
+      </>
+      <>
+        <Practical name="ritzo"></Practical>
       </>
     </div>
   );
