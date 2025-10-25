@@ -18,7 +18,9 @@ function App() {
       <div>{element}</div>
       <div>{username(userObj)}</div>
       <>
-        <Welcome></Welcome>
+        <Welcome user="saadoun"></Welcome>
+        <Welcome user="nini"></Welcome>
+        <Welcome user="rafiq"></Welcome>
       </>
     </div>
   );

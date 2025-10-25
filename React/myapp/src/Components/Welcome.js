@@ -1,4 +1,4 @@
-function Welcome() {
-  return <h1>welcome to my first react app</h1>;
+function Welcome(props) {
+  return <h1>welcome {props.user} to my first react app</h1>;
 }
 export default Welcome;
