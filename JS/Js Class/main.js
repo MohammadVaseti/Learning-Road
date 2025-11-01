@@ -64,3 +64,15 @@ class Person {
 let ob = new Person("bahram", "rezaei", 22);
 console.log(ob.show());
 console.log(Person.id());
+
+class User3 extends Person {
+  constructor(fn, ln, age, job) {
+    super(fn, ln, age);
+    this.job = job;
+  }
+  sh() {
+    return `${this.fn} ${this.ln} , ${this.job}`;
+  }
+}
+let o = new User3("hamid", "alavi", 32, "teacher");
+console.log(o.sh());
