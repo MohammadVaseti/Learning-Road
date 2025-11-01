@@ -23,6 +23,44 @@ class User2 {
     this.name = name;
     this.age = age;
   }
+
+  sayHi() {
+    return "hello" + " " + this.name;
+  }
 }
 const obj = new User2("ali", 28);
 console.log(obj.name, obj.age);
+console.log(obj.sayHi());
+
+class Student {
+  constructor(name, mark) {
+    this.name = name;
+    this.mark = mark;
+  }
+
+  showinfo() {
+    return `${this.name} get ${this.mark}`;
+  }
+}
+
+const st = new Student("reza", 20);
+console.log(st.showinfo());
+
+class Person {
+  constructor(firsname, lastname, age) {
+    this.fn = firsname;
+    this.ln = lastname;
+    this.age = age;
+  }
+  static id() {
+    return 1;
+  }
+
+  show() {
+    return `you are ${this.fn} ${this.ln} ${this.age} years old`;
+  }
+}
+
+let ob = new Person("bahram", "rezaei", 22);
+console.log(ob.show());
+console.log(Person.id());
