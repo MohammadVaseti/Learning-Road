@@ -4,8 +4,14 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
+  const me = "mohammad vaseti";
   const element = <h1>hello and welcome to react</h1>;
-  return <>{element}</>;
+  return (
+    <div>
+      {me}
+      {element}
+    </div>
+  );
 }
 
 export default App;
