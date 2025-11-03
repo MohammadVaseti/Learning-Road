@@ -4,12 +4,20 @@ import viteLogo from "/vite.svg";
 import "./App.css";
 
 function App() {
+  let a = (user) => {
+    return obj.first;
+  };
+  const obj = {
+    first: "mohammad",
+  };
+
   const me = "mohammad vaseti";
   const element = <h1>hello and welcome to react</h1>;
   return (
     <div>
       {me}
       {element}
+      {a()}
     </div>
   );
 }
