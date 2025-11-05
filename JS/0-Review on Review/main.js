@@ -127,7 +127,11 @@
 
 "use strict";
 
-function a(params) {
-  return this;
-}
-console.log(a());
+// function a(params) {
+//   return this;
+// }
+// console.log(a());
+
+const arr = [0, 1, 2];
+const [first, sec, third] = arr;
+console.log(first, sec, third);
