@@ -141,5 +141,5 @@ const obj = {
   last: "vas",
 };
 
-let { last, fn } = obj;
-console.log(fn, last);
+let { last, fn, contry = "ilam" } = obj;
+console.log(fn, last, contry);
