@@ -135,3 +135,11 @@
 const arr = [0, 1, 2];
 const [first, sec, third] = arr;
 console.log(first, sec, third);
+
+const obj = {
+  fn: "moh",
+  last: "vas",
+};
+
+let { last, fn } = obj;
+console.log(fn, last);
