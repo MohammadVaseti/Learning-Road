@@ -1,4 +1,6 @@
 let greeting: string = "hello";
 
-greeting = 12;
+// greeting = 12;
+// it give you error
+
 alert(greeting);
