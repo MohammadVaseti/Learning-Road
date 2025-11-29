@@ -1,6 +1,6 @@
 import Navbar from "./navbar";
 import Home from "./home";
-
+import "./index.css";
 function App() {
   const title = "Welcom To New Blog";
   const likes = 50;
