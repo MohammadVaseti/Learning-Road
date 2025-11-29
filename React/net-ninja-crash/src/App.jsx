@@ -1,12 +1,15 @@
 import Navbar from "./navbar";
+import Home from "./home";
 
 function App() {
   const title = "Welcom To New Blog";
   const likes = 50;
   return (
-    <div className="content">
-      <h1>{title}</h1>
-      <p>Liked {likes} Times</p>
+    <div className="app">
+      <Navbar />
+      <div className="content">
+        <Home />
+      </div>
     </div>
   );
 }
