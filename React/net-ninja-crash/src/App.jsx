@@ -1,3 +1,5 @@
+import Navbar from "./navbar";
+
 function App() {
   const title = "Welcom To New Blog";
   const likes = 50;
