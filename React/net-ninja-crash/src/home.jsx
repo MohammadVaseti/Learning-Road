@@ -1,9 +1,12 @@
+import { useState } from "react";
+
 const Home = () => {
+  // let name = "mohammad";
+
+  const [name, setName] = useState("mohammad");
+
   const handleClick = () => {
-    console.log("clicked");
-  };
-  const handleClick2 = (name) => {
-    console.log("hello" + name);
+    setName("rafigh");
   };
 
   return (
@@ -12,11 +15,7 @@ const Home = () => {
       <button onClick={handleClick} className="btn">
         Click me
       </button>
-      <button
-        onClick={() => {
-          handleClick2("mohammad");
-        }}
-      ></button>
+      <p>{name}</p>
     </div>
   );
 };
