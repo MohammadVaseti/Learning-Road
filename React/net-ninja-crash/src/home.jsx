@@ -6,7 +6,7 @@ const Home = () => {
       title: "My New Websie",
       body: " lorem ipsom ...",
       id: 1,
-      author: " mohammad",
+      author: " Mohammad",
     },
     {
       title: "Welcome Party",
