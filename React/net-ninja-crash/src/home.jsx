@@ -1,10 +1,14 @@
 const Home = () => {
-  const handleClick = () => {};
+  const handleClick = () => {
+    console.log("clicked");
+  };
 
   return (
     <div className="home">
       <h2>Homepage</h2>
-      <button className="btn">Click me</button>
+      <button onClick={handleClick} className="btn">
+        Click me
+      </button>
     </div>
   );
 };
