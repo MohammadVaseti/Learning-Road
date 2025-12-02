@@ -2,6 +2,9 @@ const Home = () => {
   const handleClick = () => {
     console.log("clicked");
   };
+  const handleClick2 = (name) => {
+    console.log("hello" + name);
+  };
 
   return (
     <div className="home">
@@ -9,6 +12,11 @@ const Home = () => {
       <button onClick={handleClick} className="btn">
         Click me
       </button>
+      <button
+        onClick={() => {
+          handleClick2("mohammad");
+        }}
+      ></button>
     </div>
   );
 };
