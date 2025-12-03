@@ -25,7 +25,9 @@ const Home = () => {
 
   return (
     <div className="home">
-      <BlogList blogs={blogs}></BlogList>
+      <BlogList blogs={blogs} title="all blogs !">
+        {" "}
+      </BlogList>
     </div>
   );
 };
