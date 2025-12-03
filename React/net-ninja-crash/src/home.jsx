@@ -1,7 +1,8 @@
 import { useState } from "react";
+import BlogList from "./BlogList";
 
 const Home = () => {
-  const [bolgs, setBlogs] = useState([
+  const [blogs, setBlogs] = useState([
     {
       title: "My New Websie",
       body: " lorem ipsom ...",
@@ -22,7 +23,11 @@ const Home = () => {
     },
   ]);
 
-  return <div className="home"></div>;
+  return (
+    <div className="home">
+      <BlogList blogs={blogs}></BlogList>
+    </div>
+  );
 };
 
 export default Home;
