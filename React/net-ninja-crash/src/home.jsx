@@ -22,18 +22,7 @@ const Home = () => {
     },
   ]);
 
-  return (
-    <div className="home">
-      {bolgs.map((blog) => {
-        return (
-          <div className="blog-preview" key={blog.id}>
-            <h2>{blog.title}</h2>
-            <p>Written By {blog.author}</p>
-          </div>
-        );
-      })}
-    </div>
-  );
+  return <div className="home"></div>;
 };
 
 export default Home;
