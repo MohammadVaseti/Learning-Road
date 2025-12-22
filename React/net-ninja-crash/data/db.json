@@ -1,0 +1,16 @@
+{
+  "blogs": [
+    {
+      "title": "my first blog",
+      "body": "why we use it",
+      "author": "mohammad",
+      "id": 1
+    },
+    {
+      "title": "opening party",
+      "body": "why we use it again ?",
+      "author": "ali",
+      "id": 2
+    }
+  ]
+}
