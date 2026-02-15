@@ -1,3 +1,5 @@
+import User from "./components/user";
+
 type User2 = { name: string; age: number };
 type Array3 = (string | number)[];
 
@@ -37,7 +39,7 @@ function App() {
 
   // ////////////////////
 
-  const sum = (a: number, b: number) => {
+  const sum = (a: number, b: number): number => {
     return a + b;
   };
 
@@ -45,6 +47,7 @@ function App() {
     <>
       <h1>Typescript</h1>
       <h2>{sum(2, 8)}</h2>
+      <User />
     </>
   );
 }
