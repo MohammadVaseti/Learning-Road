@@ -47,7 +47,7 @@ function App() {
     <>
       <h1>Typescript</h1>
       <h2>{sum(2, 8)}</h2>
-      <User />
+      <User age={27} name="mohammad" hasChild={false} />
     </>
   );
 }
