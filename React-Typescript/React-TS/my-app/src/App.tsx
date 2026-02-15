@@ -6,6 +6,17 @@ function App() {
 
   console.log(counter);
 
+  let bool: boolean = false;
+  console.log(bool);
+
+  let array = [1, "ali", false];
+  console.log(array);
+
+  let array2: number[] = [1, 2, 3];
+  console.log(array2);
+
+  // ////////////////////
+
   return (
     <>
       <h1>Typescript</h1>
