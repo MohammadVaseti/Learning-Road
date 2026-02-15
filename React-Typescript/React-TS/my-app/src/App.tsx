@@ -1,5 +1,5 @@
 type User2 = { name: string; age: number };
-export type Array3 = (string | number)[];
+type Array3 = (string | number)[];
 
 function App() {
   let fName: string = "mohammad";
@@ -37,9 +37,14 @@ function App() {
 
   // ////////////////////
 
+  const sum = (a: number, b: number) => {
+    return a + b;
+  };
+
   return (
     <>
       <h1>Typescript</h1>
+      <h2>{sum(2, 8)}</h2>
     </>
   );
 }
