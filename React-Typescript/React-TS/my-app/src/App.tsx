@@ -15,6 +15,9 @@ function App() {
   let array2: number[] = [1, 2, 3];
   console.log(array2);
 
+  let array3: (string | number)[] = [1, "ali"];
+  console.log(array3);
+
   // ////////////////////
 
   return (
