@@ -39,15 +39,14 @@ function App() {
 
   // ////////////////////
 
-  const sum = (a: number, b: number): number => {
+  const sum = (a: number, b: number) => {
     return a + b;
   };
 
   return (
     <>
       <h1>Typescript</h1>
-      <h2>{sum(2, 8)}</h2>
-      <User age={27} name="mohammad" hasChild={false} />
+      <User age={27} name="mohammad" hasChild={false} sum={sum} />
     </>
   );
 }
