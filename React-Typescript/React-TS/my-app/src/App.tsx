@@ -1,3 +1,5 @@
+type User2 = { name: string; age: number };
+
 function App() {
   let fName: string = "mohammad";
   console.log(fName);
@@ -25,8 +27,9 @@ function App() {
   };
   console.log(user);
 
-  let user2: { age: number } = {
+  let user2: User2 = {
     age: 24,
+    name: "saadoun",
   };
 
   console.log(user2);
