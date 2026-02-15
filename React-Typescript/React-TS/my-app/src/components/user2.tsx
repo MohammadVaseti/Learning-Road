@@ -1,3 +1,5 @@
+import type { FC } from "react";
+
 type User = {
   name: string;
   age: number;
@@ -5,7 +7,7 @@ type User = {
   sum: (a: number, b: number) => number;
 };
 
-function User({ name, age, hasChild }: User) {
+const User: React.FC<User> = ({ name, age, hasChild }) => {
   return (
     <>
       <p>
@@ -14,6 +16,6 @@ function User({ name, age, hasChild }: User) {
       <h2>sum is {props.sum(2, 4)}</h2>
     </>
   );
-}
+};
 
 export default User;
