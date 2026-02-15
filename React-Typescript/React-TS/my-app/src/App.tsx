@@ -1,4 +1,5 @@
 type User2 = { name: string; age: number };
+export type Array3 = (string | number)[];
 
 function App() {
   let fName: string = "mohammad";
@@ -17,7 +18,7 @@ function App() {
   let array2: number[] = [1, 2, 3];
   console.log(array2);
 
-  let array3: (string | number)[] = [1, "ali"];
+  let array3: Array3 = [1, "ali"];
   console.log(array3);
 
   let user = {
