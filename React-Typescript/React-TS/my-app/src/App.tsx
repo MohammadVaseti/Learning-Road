@@ -18,6 +18,19 @@ function App() {
   let array3: (string | number)[] = [1, "ali"];
   console.log(array3);
 
+  let user = {
+    name: "raha",
+    age: 25,
+    color: "blonde",
+  };
+  console.log(user);
+
+  let user2: { age: number } = {
+    age: 24,
+  };
+
+  console.log(user2);
+
   // ////////////////////
 
   return (
