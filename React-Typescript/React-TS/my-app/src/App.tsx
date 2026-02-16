@@ -1,5 +1,5 @@
 import User from "./components/user";
-
+import Article from "./components/article";
 type User2 = { name: string; age: number };
 type Array3 = (string | number)[];
 
@@ -47,6 +47,7 @@ function App() {
     <>
       <h1>Typescript</h1>
       <User age={27} name="mohammad" hasChild={false} sum={sum} />
+      <Article></Article>
     </>
   );
 }
