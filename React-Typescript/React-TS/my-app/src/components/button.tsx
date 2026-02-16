@@ -1,6 +1,8 @@
 import { ComponentProps } from "react";
 
-type Button = React.ComponentProps<"button">;
+type Button = React.ComponentProps<"button"> & {
+  title: string;
+};
 
 const Button = ({}: Button) => {
   return (
