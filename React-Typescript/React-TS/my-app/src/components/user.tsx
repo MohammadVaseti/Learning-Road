@@ -5,13 +5,13 @@ type User = {
   sum: (a: number, b: number) => number;
 };
 
-function User({ name, age, hasChild }: User) {
+function User({ name, age, hasChild, sum }: User) {
   return (
     <>
       <p>
         your name is {name} your age is {age} with {`${hasChild}`} children
       </p>
-      <h2>sum is {props.sum(2, 4)}</h2>
+      <h2>sum is {sum(2, 4)}</h2>
     </>
   );
 }
