@@ -5,6 +5,10 @@ type User1 = {
   age: number;
 };
 
+type User2 = {
+  childre: string[];
+};
+
 const Article = () => {
   const [state, setState] = useState<string>("hi");
 
