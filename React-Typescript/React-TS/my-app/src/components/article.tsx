@@ -1,5 +1,10 @@
 import { useState } from "react";
 
+type User1 = {
+  name: string;
+  age: number;
+};
+
 const Article = () => {
   const [state, setState] = useState<string>("hi");
 
