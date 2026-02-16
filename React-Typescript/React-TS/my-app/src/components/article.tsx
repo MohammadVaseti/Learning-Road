@@ -1,7 +1,11 @@
+import { useState } from "react";
+
 const Article = () => {
+  const [state, setState] = useState<string>("hi");
+
   return (
     <>
-      <h1>articl</h1>
+      <h1>{state}</h1>
     </>
   );
 };
