@@ -33,5 +33,13 @@ enum direction {
   down,
 }
 
-let move: direction = direction.up;
+let move: direction = direction.left;
 console.log(move);
+
+enum color {
+  red = "red",
+  blue = "blue",
+}
+
+let col: color = color.blue;
+console.log(col);

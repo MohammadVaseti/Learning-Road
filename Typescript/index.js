@@ -1,18 +1,18 @@
 // primitive data types
-var message = "hello";
+let message = "hello";
 console.log(message);
-var myName = "mohammad";
-var score = 18;
-var isProgrammer = true;
-var number = [1, 2, 3];
-var cities = ["tehran", "tabriz"];
+let myName = "mohammad";
+let score = 18;
+let isProgrammer = true;
+let number = [1, 2, 3];
+let cities = ["tehran", "tabriz"];
 // tuple
-var person = ["amir", 27];
-var user = {
+let person = ["amir", 27];
+let user = {
     name: "ali",
     age: 26,
 };
-var rnd = "hi";
+let rnd = "hi";
 rnd = 55;
 // enum
 var direction;
@@ -22,5 +22,14 @@ var direction;
     direction[direction["right"] = 2] = "right";
     direction[direction["down"] = 3] = "down";
 })(direction || (direction = {}));
-var move = direction.up;
+let move = direction.left;
 console.log(move);
+var color;
+(function (color) {
+    color["red"] = "red";
+    color["blue"] = "blue";
+})(color || (color = {}));
+let col = color.blue;
+console.log(col);
+export {};
+//# sourceMappingURL=index.js.map
