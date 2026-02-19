@@ -44,8 +44,13 @@ enum color {
 let col: color = color.blue;
 console.log(col);
 
-function greeting(name: string, age: number): string {
+function greeting(name: string, age?: number): string {
   return `you are ${name} and ${age} years old`;
 }
 
 console.log(greeting("ali", 29));
+
+function logMessage(message: string): void {
+  console.log(`this is : ${message}`);
+}
+logMessage("my message");

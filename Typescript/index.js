@@ -35,5 +35,9 @@ function greeting(name, age) {
     return `you are ${name} and ${age} years old`;
 }
 console.log(greeting("ali", 29));
+function logMessage(message) {
+    console.log(`this is : ${message}`);
+}
+logMessage("my message");
 export {};
 //# sourceMappingURL=index.js.map
