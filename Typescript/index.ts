@@ -6,3 +6,8 @@ let score: number = 18;
 let isProgrammer: boolean = true;
 
 let number: number[] = [1, 2, 3];
+let cities: Array<string> = ["tehran", "tabriz"];
+
+// tuple
+
+let person: [string, number] = ["amir", 27];
