@@ -1,3 +1,5 @@
+// primitive data types
+
 let message: string = "hello";
 console.log(message);
 
@@ -22,3 +24,5 @@ let user: {
 
 let rnd: any = "hi";
 rnd = 55;
+
+// enum
