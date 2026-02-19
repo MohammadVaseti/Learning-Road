@@ -31,5 +31,9 @@ var color;
 })(color || (color = {}));
 let col = color.blue;
 console.log(col);
+function greeting(name, age) {
+    return `you are ${name} and ${age} years old`;
+}
+console.log(greeting("ali", 29));
 export {};
 //# sourceMappingURL=index.js.map

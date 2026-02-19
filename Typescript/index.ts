@@ -43,3 +43,9 @@ enum color {
 
 let col: color = color.blue;
 console.log(col);
+
+function greeting(name: string, age: number): string {
+  return `you are ${name} and ${age} years old`;
+}
+
+console.log(greeting("ali", 29));
