@@ -19,3 +19,6 @@ let user: {
   name: "ali",
   age: 26,
 };
+
+let rnd: any = "hi";
+rnd = 55;
