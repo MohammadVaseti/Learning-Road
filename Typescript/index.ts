@@ -26,3 +26,12 @@ let rnd: any = "hi";
 rnd = 55;
 
 // enum
+enum direction {
+  up,
+  left,
+  right,
+  down,
+}
+
+let move: direction = direction.up;
+console.log(move);
