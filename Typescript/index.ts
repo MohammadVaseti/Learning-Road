@@ -114,3 +114,8 @@ const userInfo: User = {
 };
 
 console.log(userInfo.name);
+
+function userInfo2(user: User) {
+  console.log(user.email);
+}
+userInfo2(userInfo);

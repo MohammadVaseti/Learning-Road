@@ -84,5 +84,9 @@ const userInfo = {
     email: "mohammad.com",
 };
 console.log(userInfo.name);
+function userInfo2(user) {
+    console.log(user.email);
+}
+userInfo2(userInfo);
 export {};
 //# sourceMappingURL=index.js.map
