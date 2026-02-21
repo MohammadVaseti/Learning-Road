@@ -150,3 +150,16 @@ const company: Employee = {
   id: 10,
 };
 console.log(company.name);
+
+// type &
+type child = {
+  name: string;
+};
+type student = child & {
+  id: number;
+};
+const a: student = {
+  name: "saadoun",
+  id: 34,
+};
+console.log(a.name);

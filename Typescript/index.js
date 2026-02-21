@@ -99,5 +99,10 @@ const company = {
     id: 10,
 };
 console.log(company.name);
+const a = {
+    name: "saadoun",
+    id: 34,
+};
+console.log(a.name);
 export {};
 //# sourceMappingURL=index.js.map
