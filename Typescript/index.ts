@@ -71,3 +71,5 @@ enum todoStatus {
 }
 
 let tasks: Array<{ id: number; title: string; status: todoStatus }> = [];
+
+function addTasks(title: string, status: todoStatus): void {}
