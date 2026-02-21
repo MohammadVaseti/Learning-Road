@@ -54,3 +54,5 @@ function logMessage(message: string): void {
   console.log(`this is : ${message}`);
 }
 logMessage("my message");
+
+function combine(a: string | number, b: string | number) {}
