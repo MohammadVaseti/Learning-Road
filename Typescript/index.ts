@@ -119,3 +119,14 @@ function userInfo2(user: User) {
   console.log(user.email);
 }
 userInfo2(userInfo);
+
+// type
+
+type Information = {
+  id: number;
+  name: string;
+};
+const user2: Information = {
+  id: 3,
+  name: "ali",
+};
