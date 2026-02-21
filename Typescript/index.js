@@ -52,6 +52,9 @@ var todoStatus;
     todoStatus["done"] = "finished";
 })(todoStatus || (todoStatus = {}));
 let tasks = [];
-function addTasks(title, status) { }
+function addTasks(title, status) {
+    const newTask = { id: tasks.length + 1, title, status };
+    tasks.push(newTask);
+}
 export {};
 //# sourceMappingURL=index.js.map

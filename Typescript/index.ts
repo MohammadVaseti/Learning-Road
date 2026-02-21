@@ -72,4 +72,7 @@ enum todoStatus {
 
 let tasks: Array<{ id: number; title: string; status: todoStatus }> = [];
 
-function addTasks(title: string, status: todoStatus): void {}
+function addTasks(title: string, status: todoStatus): void {
+  const newTask = { id: tasks.length + 1, title, status };
+  tasks.push(newTask);
+}
