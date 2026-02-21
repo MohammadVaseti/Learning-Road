@@ -62,8 +62,27 @@ function showTask() {
         console.log(`${task.id} - ${task.title} - ${task.status}`);
     });
 }
+function updateTask(id, newStatus) {
+    let task = tasks.find((item) => {
+        item.id == id;
+    });
+    if (task) {
+        task.status = newStatus;
+        console.log("task status updated");
+    }
+    else {
+        console.log("not found");
+    }
+}
 addTasks("learning TS", todoStatus.pending);
 addTasks("going to bazzar", todoStatus.done);
+updateTask(1, todoStatus.inProgress);
 showTask();
+const userInfo = {
+    id: 1,
+    name: "mohammad",
+    email: "mohammad.com",
+};
+console.log(userInfo.name);
 export {};
 //# sourceMappingURL=index.js.map
