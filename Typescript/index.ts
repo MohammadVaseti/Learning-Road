@@ -61,3 +61,13 @@ function combine(a: string | number, b: string | number) {
 
 console.log(combine(10, 20));
 console.log(combine("h", "a"));
+
+// function overloading
+
+enum todoStatus {
+  pendind = "wait",
+  inProgress = "doing",
+  done = "finished",
+}
+
+let tasks: Array<{ id: number; title: string; status: todoStatus }> = [];

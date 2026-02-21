@@ -44,5 +44,13 @@ function combine(a, b) {
 }
 console.log(combine(10, 20));
 console.log(combine("h", "a"));
+// function overloading
+var todoStatus;
+(function (todoStatus) {
+    todoStatus["pendind"] = "wait";
+    todoStatus["inProgress"] = "doing";
+    todoStatus["done"] = "finished";
+})(todoStatus || (todoStatus = {}));
+let tasks = [];
 export {};
 //# sourceMappingURL=index.js.map
