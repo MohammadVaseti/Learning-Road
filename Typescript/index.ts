@@ -55,4 +55,9 @@ function logMessage(message: string): void {
 }
 logMessage("my message");
 
-function combine(a: string | number, b: string | number) {}
+function combine(a: string | number, b: string | number) {
+  return a + b;
+}
+
+console.log(combine(10, 20));
+console.log(combine("h", "a"));

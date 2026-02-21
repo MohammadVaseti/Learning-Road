@@ -39,5 +39,10 @@ function logMessage(message) {
     console.log(`this is : ${message}`);
 }
 logMessage("my message");
+function combine(a, b) {
+    return a + b;
+}
+console.log(combine(10, 20));
+console.log(combine("h", "a"));
 export {};
 //# sourceMappingURL=index.js.map
