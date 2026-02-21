@@ -88,5 +88,16 @@ function userInfo2(user) {
     console.log(user.email);
 }
 userInfo2(userInfo);
+const user2 = {
+    id: 3,
+    name: "ali",
+};
+const myArr = [1, "maryam"];
+console.log(myArr[1]);
+const company = {
+    name: "soha",
+    id: 10,
+};
+console.log(company.name);
 export {};
 //# sourceMappingURL=index.js.map

@@ -130,3 +130,23 @@ const user2: Information = {
   id: 3,
   name: "ali",
 };
+
+// type for tuple
+
+type arr = [number, string];
+const myArr: arr = [1, "maryam"];
+console.log(myArr[1]);
+
+// interface extends
+
+interface Person {
+  name: string;
+}
+interface Employee extends Person {
+  id: number;
+}
+const company: Employee = {
+  name: "soha",
+  id: 10,
+};
+console.log(company.name);
