@@ -65,7 +65,7 @@ console.log(combine("h", "a"));
 // function overloading
 
 enum todoStatus {
-  pendind = "wait",
+  pending = "wait",
   inProgress = "doing",
   done = "finished",
 }
@@ -75,4 +75,14 @@ let tasks: Array<{ id: number; title: string; status: todoStatus }> = [];
 function addTasks(title: string, status: todoStatus): void {
   const newTask = { id: tasks.length + 1, title, status };
   tasks.push(newTask);
+  console.log(`task ${title} added`);
 }
+
+function showTask() {
+  tasks.map((task) => {
+    console.log(`${task.id} - ${task.title} - ${task.status}`);
+  });
+}
+addTasks("learning TS", todoStatus.pending);
+addTasks("going to bazzar", todoStatus.done);
+showTask();

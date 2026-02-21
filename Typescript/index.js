@@ -47,7 +47,7 @@ console.log(combine("h", "a"));
 // function overloading
 var todoStatus;
 (function (todoStatus) {
-    todoStatus["pendind"] = "wait";
+    todoStatus["pending"] = "wait";
     todoStatus["inProgress"] = "doing";
     todoStatus["done"] = "finished";
 })(todoStatus || (todoStatus = {}));
@@ -55,6 +55,15 @@ let tasks = [];
 function addTasks(title, status) {
     const newTask = { id: tasks.length + 1, title, status };
     tasks.push(newTask);
+    console.log(`task ${title} added`);
 }
+function showTask() {
+    tasks.map((task) => {
+        console.log(`${task.id} - ${task.title} - ${task.status}`);
+    });
+}
+addTasks("learning TS", todoStatus.pending);
+addTasks("going to bazzar", todoStatus.done);
+showTask();
 export {};
 //# sourceMappingURL=index.js.map
