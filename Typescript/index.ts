@@ -196,7 +196,6 @@ const games: Game[] = [
     genre: "action",
     releaseDate: 2023,
     rate: 6.0,
-    multi: false,
   },
 ];
 
@@ -207,3 +206,42 @@ function filterByGenre(games: Game[], genre: string) {
 }
 
 console.log(filterByGenre(games, "action"));
+
+function findMulti(games: Game[]) {
+  return games.filter((item) => {
+    return item.multi == true;
+  });
+}
+console.log(findMulti(games));
+
+// ///////////////
+
+class Person {
+  constructor(name: string, age: number) {
+    this.name = name;
+    this.age = age;
+  }
+
+  introduce() {
+    console.log(`hi i am ${this.name} and ${this.age} years old`);
+  }
+}
+const person1 = new Person("reza", 25);
+person1.introduce();
+
+class Person2 {
+  name: string;
+  age: number;
+
+  constructor(name: string, age: number) {
+    this.name = name;
+    this.age = age;
+  }
+
+  introduce(): void {
+    console.log(`hi i am ${this.name} and ${this.age} years old`);
+  }
+}
+
+const person2 = new Person2("ati", 27);
+person2.introduce();

@@ -128,7 +128,6 @@ const games = [
         genre: "action",
         releaseDate: 2023,
         rate: 6.0,
-        multi: false,
     },
 ];
 function filterByGenre(games, genre) {
@@ -137,5 +136,36 @@ function filterByGenre(games, genre) {
     });
 }
 console.log(filterByGenre(games, "action"));
+function findMulti(games) {
+    return games.filter((item) => {
+        return item.multi == true;
+    });
+}
+console.log(findMulti(games));
+// ///////////////
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    introduce() {
+        console.log(`hi i am ${this.name} and ${this.age} years old`);
+    }
+}
+const person1 = new Person("reza", 25);
+person1.introduce();
+class Person2 {
+    name;
+    age;
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    introduce() {
+        console.log(`hi i am ${this.name} and ${this.age} years old`);
+    }
+}
+const person2 = new Person2("ati", 27);
+person2.introduce();
 export {};
 //# sourceMappingURL=index.js.map
