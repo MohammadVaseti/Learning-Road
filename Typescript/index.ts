@@ -163,3 +163,12 @@ const a: student = {
   id: 34,
 };
 console.log(a.name);
+
+interface Game {
+  id: number;
+  title: string;
+  genre: string;
+  releaseDate: number;
+  rate: number;
+  multi: boolean;
+}
