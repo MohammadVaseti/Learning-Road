@@ -172,3 +172,32 @@ interface Game {
   rate: number;
   multi?: boolean;
 }
+
+const games: Game[] = [
+  {
+    id: 1,
+    title: "fifa",
+    genre: "sport",
+    releaseDate: 2026,
+    rate: 6.0,
+    multi: true,
+  },
+  {
+    id: 1,
+    title: "battlefield",
+    genre: "action",
+    releaseDate: 2024,
+    rate: 4.0,
+    multi: true,
+  },
+  {
+    id: 1,
+    title: "god of war",
+    genre: "action",
+    releaseDate: 2023,
+    rate: 6.0,
+    multi: false,
+  },
+];
+
+function filterByGenre() {}
