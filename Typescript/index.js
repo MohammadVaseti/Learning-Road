@@ -64,7 +64,7 @@ function showTask() {
 }
 function updateTask(id, newStatus) {
     let task = tasks.find((item) => {
-        item.id == id;
+        return item.id == id;
     });
     if (task) {
         task.status = newStatus;
@@ -104,5 +104,38 @@ const a = {
     id: 34,
 };
 console.log(a.name);
+// ///////////////////////
+const games = [
+    {
+        id: 1,
+        title: "fifa",
+        genre: "sport",
+        releaseDate: 2026,
+        rate: 6.0,
+        multi: true,
+    },
+    {
+        id: 1,
+        title: "battlefield",
+        genre: "action",
+        releaseDate: 2024,
+        rate: 4.0,
+        multi: true,
+    },
+    {
+        id: 1,
+        title: "god of war",
+        genre: "action",
+        releaseDate: 2023,
+        rate: 6.0,
+        multi: false,
+    },
+];
+function filterByGenre(games, genre) {
+    return games.filter((item) => {
+        return item.genre == genre;
+    });
+}
+console.log(filterByGenre(games, "sport"));
 export {};
 //# sourceMappingURL=index.js.map

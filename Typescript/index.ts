@@ -86,7 +86,7 @@ function showTask() {
 
 function updateTask(id: number, newStatus: todoStatus): void {
   let task = tasks.find((item) => {
-    item.id == id;
+    return item.id == id;
   });
   if (task) {
     task.status = newStatus;
@@ -202,8 +202,8 @@ const games: Game[] = [
 
 function filterByGenre(games: Game[], genre: string) {
   return games.filter((item) => {
-    item.genre == genre;
+    return item.genre == genre;
   });
 }
 
-console.log(games, "action");
+console.log(filterByGenre(games, "sport"));
