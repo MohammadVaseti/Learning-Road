@@ -165,10 +165,10 @@ const a: student = {
 console.log(a.name);
 
 interface Game {
-  id: number;
+  readonly id: number;
   title: string;
   genre: string;
   releaseDate: number;
   rate: number;
-  multi: boolean;
+  multi?: boolean;
 }
