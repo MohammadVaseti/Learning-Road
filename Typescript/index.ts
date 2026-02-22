@@ -263,4 +263,50 @@ class User {
   public updateStatus(newStatus: string) {
     this.status = newStatus;
   }
+
+  private getEmail() {
+    return this.email;
+  }
 }
+
+class Admin extends User{
+  constructor(name:string , email:string status :string){
+    super(name , email , status)
+  }
+
+ public getAdminInfo(){
+    console.log(`${this.name} & ${this.status}`);
+  }
+
+
+  public getEmail(){
+      console.log(this.getEmail()); 
+  }
+}
+
+
+
+const userforClass = new User("haji", "haji.com", "active");
+userforClass.userinfo();
+
+
+// generics
+
+function showFirst<T>(arr : T[]) : T{
+  return arr[0]
+}
+
+
+
+
+console.log(showFirst(['amin', 'nima', 'sara']));
+
+
+interface box<T>{
+  content :T
+}
+let box1 : box<number> = {
+  content : 10
+}
+
+console.log(box1.content);

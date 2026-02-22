@@ -182,6 +182,31 @@ class User {
     updateStatus(newStatus) {
         this.status = newStatus;
     }
+    getEmail() {
+        return this.email;
+    }
 }
+class Admin extends User {
+    constructor(name, email, status) {
+        super(name, email, status);
+    }
+    getAdminInfo() {
+        console.log(`${this.name} & ${this.status}`);
+    }
+    getEmail() {
+        console.log(this.getEmail());
+    }
+}
+const userforClass = new User("haji", "haji.com", "active");
+userforClass.userinfo();
+// generics
+function showFirst(arr) {
+    return arr[0];
+}
+console.log(showFirst(['amin', 'nima', 'sara']));
+let box1 = {
+    content: 10
+};
+console.log(box1.content);
 export {};
 //# sourceMappingURL=index.js.map
