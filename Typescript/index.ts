@@ -172,7 +172,7 @@ interface Game {
   rate: number;
   multi?: boolean;
 }
-
+// ///////////////////////
 const games: Game[] = [
   {
     id: 1,
@@ -200,4 +200,10 @@ const games: Game[] = [
   },
 ];
 
-function filterByGenre() {}
+function filterByGenre(games: Game[], genre: string) {
+  return games.filter((item) => {
+    item.genre == genre;
+  });
+}
+
+console.log(games, "action");
