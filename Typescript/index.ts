@@ -183,7 +183,7 @@ const games: Game[] = [
     multi: true,
   },
   {
-    id: 1,
+    id: 2,
     title: "battlefield",
     genre: "action",
     releaseDate: 2024,
@@ -191,7 +191,7 @@ const games: Game[] = [
     multi: true,
   },
   {
-    id: 1,
+    id: 3,
     title: "god of war",
     genre: "action",
     releaseDate: 2023,
@@ -206,4 +206,4 @@ function filterByGenre(games: Game[], genre: string) {
   });
 }
 
-console.log(filterByGenre(games, "sport"));
+console.log(filterByGenre(games, "action"));

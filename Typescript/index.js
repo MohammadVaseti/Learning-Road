@@ -115,7 +115,7 @@ const games = [
         multi: true,
     },
     {
-        id: 1,
+        id: 2,
         title: "battlefield",
         genre: "action",
         releaseDate: 2024,
@@ -123,7 +123,7 @@ const games = [
         multi: true,
     },
     {
-        id: 1,
+        id: 3,
         title: "god of war",
         genre: "action",
         releaseDate: 2023,
@@ -136,6 +136,6 @@ function filterByGenre(games, genre) {
         return item.genre == genre;
     });
 }
-console.log(filterByGenre(games, "sport"));
+console.log(filterByGenre(games, "action"));
 export {};
 //# sourceMappingURL=index.js.map
