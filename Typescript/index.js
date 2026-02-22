@@ -167,5 +167,21 @@ class Person2 {
 }
 const person2 = new Person2("ati", 27);
 person2.introduce();
+class User {
+    name;
+    email;
+    status;
+    constructor(name, email, status) {
+        this.name = name;
+        this.email = email;
+        this.status = status;
+    }
+    userinfo() {
+        console.log(`name is : ${this.name} status is${this.status}`);
+    }
+    updateStatus(newStatus) {
+        this.status = newStatus;
+    }
+}
 export {};
 //# sourceMappingURL=index.js.map

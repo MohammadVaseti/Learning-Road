@@ -245,3 +245,22 @@ class Person2 {
 
 const person2 = new Person2("ati", 27);
 person2.introduce();
+
+class User {
+  public name: string;
+  private email: string;
+  protected status: string;
+
+  constructor(name: string, email: string, status: string) {
+    this.name = name;
+    this.email = email;
+    this.status = status;
+  }
+  public userinfo() {
+    console.log(`name is : ${this.name} status is${this.status}`);
+  }
+
+  public updateStatus(newStatus: string) {
+    this.status = newStatus;
+  }
+}
