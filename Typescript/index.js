@@ -208,5 +208,13 @@ let box1 = {
     content: 10
 };
 console.log(box1.content);
+var product;
+(function (product) {
+    const products = [
+        { id: 1, name: 'laptop', price: 10000 },
+        { id: 2, name: 'pc', price: 210000 },
+        { id: 3, name: 'xbox', price: 150000 }
+    ];
+})(product || (product = {}));
 export {};
 //# sourceMappingURL=index.js.map

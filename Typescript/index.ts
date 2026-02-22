@@ -310,3 +310,28 @@ let box1 : box<number> = {
 }
 
 console.log(box1.content);
+
+
+
+
+namespace product {
+  interface Product {
+    readonly id : number
+    name : string ,
+    price : number ,
+
+  }
+  const products : Product[]= [
+    {id:1 , name:'laptop' , price : 10000} ,
+     {id:2 , name:'pc' , price : 210000} ,
+      {id:3 , name:'xbox' , price : 150000}
+  ]
+
+function
+
+
+
+
+
+
+}
