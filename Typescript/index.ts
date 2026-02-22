@@ -327,7 +327,12 @@ namespace product {
       {id:3 , name:'xbox' , price : 150000}
   ]
 
-function
+function listProduct (){
+  return products.map((item)=>{
+    return console.log(item);
+  })
+}
+listProduct()
 
 
 

@@ -215,6 +215,12 @@ var product;
         { id: 2, name: 'pc', price: 210000 },
         { id: 3, name: 'xbox', price: 150000 }
     ];
+    function listProduct() {
+        return products.map((item) => {
+            return console.log(item);
+        });
+    }
+    listProduct();
 })(product || (product = {}));
 export {};
 //# sourceMappingURL=index.js.map
