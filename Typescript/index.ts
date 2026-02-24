@@ -314,6 +314,7 @@ console.log(box1.content);
 
 
 
+
 namespace product {
   interface Product {
     readonly id : number
@@ -327,16 +328,12 @@ namespace product {
       {id:3 , name:'xbox' , price : 150000}
   ]
 
-function listProduct (){
+ export function listProduct () : string{
   return products.map((item)=>{
     return console.log(item);
   })
 }
-listProduct()
-
-
-
-
 
 
 }
+product.listProduct()

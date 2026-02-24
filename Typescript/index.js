@@ -220,7 +220,8 @@ var product;
             return console.log(item);
         });
     }
-    listProduct();
+    product.listProduct = listProduct;
 })(product || (product = {}));
+product.listProduct();
 export {};
 //# sourceMappingURL=index.js.map
