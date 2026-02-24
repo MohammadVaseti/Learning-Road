@@ -4,9 +4,20 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#cccccc",
+            },
+          },
+        },
+      };
+    </script>
     <title>Tailwind</title>
   </head>
-  <body class="bg-slate-900 text-white">
+  <body class="bg-primary text-white">
     <h1 class="text-lg font-bold text-white">Hello world!</h1>
     <p class="text-white">tailwind</p>
     <p class="text-blue-400">tailwind</p>
