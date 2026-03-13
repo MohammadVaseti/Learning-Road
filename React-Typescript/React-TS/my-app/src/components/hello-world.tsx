@@ -7,7 +7,7 @@ const HelloWorld = (props: HelloworldProps) => {
   return (
     <>
       <div>
-        <h1>hello</h1>
+        <h1>hello i am {props.name}</h1>
       </div>
     </>
   );
