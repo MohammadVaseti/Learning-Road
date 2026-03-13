@@ -1,8 +1,10 @@
+import HelloWorld from "./components/hello-world";
+
 function App() {
   return (
     <>
       <div>
-        <h1>hello</h1>
+        <HelloWorld name="ali" color="red" />
       </div>
     </>
   );

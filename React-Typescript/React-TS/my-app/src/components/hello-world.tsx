@@ -4,9 +4,14 @@ type HelloworldProps = {
 };
 
 const HelloWorld = (props: HelloworldProps) => {
+  const containerStyles: React.CSSProperties = {
+    color: props.color,
+    backgroundColor: "blue",
+  };
+
   return (
     <>
-      <div>
+      <div style={containerStyles}>
         <h1>hello i am {props.name}</h1>
       </div>
     </>
