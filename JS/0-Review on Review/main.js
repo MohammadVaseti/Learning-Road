@@ -132,14 +132,70 @@
 // }
 // console.log(a());
 
-const arr = [0, 1, 2];
-const [first, sec, third] = arr;
-console.log(first, sec, third);
+// const arr = [0, 1, 2];
+// const [first, sec, third] = arr;
+// console.log(first, sec, third);
 
-const obj = {
-  fn: "moh",
-  last: "vas",
-};
+// const obj = {
+//   fn: "moh",
+//   last: "vas",
+// };
 
-let { last, fn, contry = "ilam" } = obj;
-console.log(fn, last, contry);
+// let { last, fn, contry = "ilam" } = obj;
+// console.log(fn, last, contry);
+
+// 1-Challenge reverse
+
+function reverse(name) {
+  let reversed = "";
+  for (let a = name.length - 1; a >= 0; a--) {
+    reversed += name[a];
+  }
+  console.log(reversed);
+}
+reverse("ali");
+
+// 2-Challenge unique numbers
+
+const nums = [1, 2, 2, 3, 4, 4, 5];
+
+const unique = [...new Set(nums)];
+console.log(unique);
+
+
+// 3- increase by click
+const btn = document.querySelector("button");
+btn.addEventListener("click", (e) => {
+  console.log((btn.textContent = Number(btn.textContent) + 1));
+});
+
+//4- find max number in array
+
+const numbers = [1, 2, 3, 55, 7, 85, 89, 12, 101, 11];
+let max = numbers[0];
+
+for (let a = 0; a < numbers.length; a++) {
+  if (max < numbers[a]) {
+    max = numbers[a];
+  }
+}
+console.log(max);
+
+function rev(name) {
+  let reversed3 = "";
+  for (let i = name.length - 1; i >= 0; i--) {
+    reversed3 += name[i];
+  }
+  console.log(reversed3);
+}
+rev("mohamad");
+
+// 5- reverse is equal main ?
+function pali(str) {
+  if (str[0] == str[str.length - 1]) {
+    console.log("pali");
+  } else {
+    console.log("no");
+  }
+}
+pali("hohb");
