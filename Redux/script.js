@@ -7,8 +7,10 @@ const store = {
     return this.state;
   },
   dispatch(action) {
-    return store.state.cart.push(action);
+    if (action.type == "add") {
+      return store.state.cart.push(action.product);
+    }
   },
 };
-store.dispatch("apple");
+store.dispatch({ type: "add", product: "apple" });
 console.log(store.getState());
