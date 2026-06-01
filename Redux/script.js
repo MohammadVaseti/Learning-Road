@@ -8,9 +8,12 @@ const store = {
   },
   dispatch(action) {
     if (action.type == "add") {
-      return store.state.cart.push(action.product);
+      return store.state.cart.push(action.payload);
+    } else if (action.type == "remove") {
+      return store.state.cart.pop(action.payload);
     }
   },
 };
-store.dispatch({ type: "add", product: "apple" });
+store.dispatch({ type: "add", payload: "apple" });
+store.dispatch({ type: "remove", payload: "apple" });
 console.log(store.getState());
