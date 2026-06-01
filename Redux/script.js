@@ -6,5 +6,9 @@ const store = {
   getState() {
     return this.state;
   },
+  dispatch(action) {
+    return store.state.cart.push(action);
+  },
 };
+store.dispatch("apple");
 console.log(store.getState());
