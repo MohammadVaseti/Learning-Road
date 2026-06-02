@@ -15,6 +15,22 @@ const store = {
   },
 };
 
+function reducer(state, action) {
+  switch (action.type) {
+    case "add":
+      return { ...state, cart: [...state.cart, action.payload] };
+      break;
+
+    case "remove":
+      return { ...state, cart: [state.cart.slice(0, 0)] };
+      break;
+
+    default:
+      return state;
+      break;
+  }
+}
+
 function add(product) {
   return { type: "add", payload: product };
 }
