@@ -14,6 +14,14 @@ const store = {
     }
   },
 };
-store.dispatch({ type: "add", payload: "apple" });
-store.dispatch({ type: "remove", payload: "apple" });
+
+function add(product) {
+  return { type: "add", payload: product };
+}
+function remove(product) {
+  return { type: "remove", payload: product };
+}
+
+store.dispatch(add("apple"));
+store.dispatch(remove("apple"));
 console.log(store.getState());
