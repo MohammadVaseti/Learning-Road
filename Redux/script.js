@@ -7,11 +7,7 @@ const store = {
     return this.state;
   },
   dispatch(action) {
-    if (action.type == "add") {
-      return store.state.cart.push(action.payload);
-    } else if (action.type == "remove") {
-      return store.state.cart.pop(action.payload);
-    }
+    this.state = reducer(this.state, action);
   },
 };
 
@@ -39,5 +35,5 @@ function remove(product) {
 }
 
 store.dispatch(add("apple"));
-store.dispatch(remove("apple"));
+// store.dispatch(remove("apple"));
 console.log(store.getState());
