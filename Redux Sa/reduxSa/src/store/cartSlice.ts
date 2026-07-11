@@ -20,7 +20,11 @@ export const cartSlice = createSlice({
   name: "cart",
   initialState : ,
   reducers :{
-    addTocart (state , action : PayloadAction){},
+    addTocart (state , action : PayloadAction<{id : string , title : string , price : number}>){
+    const itemIndex =  state.items.findIndex(
+        (item)=> item.id === action.payload.id
+      )
+    },
     removeFromCart (){}
   }
 });
