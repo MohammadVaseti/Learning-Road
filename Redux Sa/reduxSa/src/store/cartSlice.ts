@@ -6,7 +6,9 @@ type cartState = {
   items : cartItem[]
 }
 
-const initialState =
+const initialState :cartState = {
+  items : []
+}
 
 
 export const cartSlice = createSlice({
