@@ -24,7 +24,12 @@ export const cartSlice = createSlice({
     const itemIndex =  state.items.findIndex(
         (item)=> item.id === action.payload.id
       )
-      if(itemIndex >=0) {}
+      if(itemIndex >=0) {
+        state.items[itemIndex].quantity++
+      }
+      else{
+        
+      }
     },
     removeFromCart (){}
   }
