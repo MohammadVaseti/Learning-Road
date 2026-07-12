@@ -20,10 +20,11 @@ export const cartSlice = createSlice({
   name: "cart",
   initialState : ,
   reducers :{
-    addTocart (state , action : PayloadAction<{id : string , title : string , price : number}>){
+    addTocart (state , action : PayloadAction<{id : string , title : string , price : number}>){ 
     const itemIndex =  state.items.findIndex(
         (item)=> item.id === action.payload.id
       )
+      if(itemIndex >=0) {}
     },
     removeFromCart (){}
   }
