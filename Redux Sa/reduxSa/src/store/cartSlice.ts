@@ -31,6 +31,8 @@ export const cartSlice = createSlice({
         state.items.push({...action.payload , quantity: 1})
       }
     },
-    removeFromCart (state , action:PayloadAction<string>){}
+    removeFromCart (state , action:PayloadAction<string>){
+      state.items.findIndex((item)=> item.id ===)
+    }
   }
 });
