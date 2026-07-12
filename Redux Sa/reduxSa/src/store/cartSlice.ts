@@ -32,7 +32,9 @@ export const cartSlice = createSlice({
       }
     },
     removeFromCart (state , action:PayloadAction<string>){
-      state.items.findIndex((item)=> item.id ===)
+    const itemIndex =  state.items.findIndex((item)=> item.id === action.payload)
+
+    if(state.items[itemIndex.quantity===1])
     }
   }
 });
