@@ -28,7 +28,7 @@ export const cartSlice = createSlice({
         state.items[itemIndex].quantity++
       }
       else{
-        
+        state.items.push({...action.payload , quantity: 1})
       }
     },
     removeFromCart (){}
