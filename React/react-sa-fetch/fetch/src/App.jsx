@@ -1,5 +1,5 @@
 import axios, { Axios } from "axios";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   // fetch("https://catfact.ninja/fact")
@@ -7,8 +7,9 @@ function App() {
   //   .then((data) => console.log(data));
 
   const [catFact, setCatFact] = useState("");
+  useEffect(() => {}, []);
 
-  const getFetch = () => {
+  const fetchFact = () => {
     axios
       .get("https://catfact.ninja/fact")
       .then((res) => setCatFact(res.data.fact));
@@ -16,7 +17,7 @@ function App() {
 
   return (
     <>
-      <button onClick={getFetch}>Fetch</button>
+      <button onClick={fetchFact}>Fetch</button>
       <p>{catFact}</p>
     </>
   );
