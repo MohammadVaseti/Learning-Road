@@ -1,4 +1,6 @@
 function App() {
+  fetch("https://catfact.ninja/fact");
+
   return (
     <>
       <button>Fetch</button>
