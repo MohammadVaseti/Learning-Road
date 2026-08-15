@@ -1,3 +1,5 @@
+import { Axios } from "axios";
+
 function App() {
   fetch("https://catfact.ninja/fact")
     .then((res) => res.json())
