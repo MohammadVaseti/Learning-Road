@@ -1,13 +1,19 @@
-import { Axios } from "axios";
+import axios, { Axios } from "axios";
 
 function App() {
-  fetch("https://catfact.ninja/fact")
-    .then((res) => res.json())
-    .then((data) => console.log(data));
+  // fetch("https://catfact.ninja/fact")
+  //   .then((res) => res.json())
+  //   .then((data) => console.log(data));
+
+  const getFetch = () => {
+    axios
+      .get("https://catfact.ninja/fact")
+      .then((res) => console.log(res.data.fact));
+  };
 
   return (
     <>
-      <button>Fetch</button>
+      <button onClick={getFetch}>Fetch</button>
       <p></p>
     </>
   );
