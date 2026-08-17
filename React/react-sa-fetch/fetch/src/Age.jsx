@@ -1,4 +1,8 @@
+import { useState } from "react";
+
 const Age = () => {
+  const [name, setName] = useState("");
+
   return (
     <>
       <input type="text" placeholder="Enter Your Name" />
