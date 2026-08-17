@@ -20,7 +20,9 @@ const Age = () => {
     <>
       <input type="text" placeholder="Enter Your Name" onChange={nameHolder} />
       <button onClick={fetchAge}>Predict</button>
-      <h1>Your Age is {predictedAge}</h1>
+      <h1>
+        Your Age is {predictedAge} your name is {name}
+      </h1>
     </>
   );
 };
