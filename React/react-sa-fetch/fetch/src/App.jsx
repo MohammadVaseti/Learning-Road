@@ -8,11 +8,7 @@ function App() {
   return (
     <Router>
       <h1>Saadoun</h1>
-      <nav>
-        <Link to={"/"}>Home</Link>
-        <Link to={"/about"}>About</Link>
-        <Link to={"/contact"}>Contact</Link>
-      </nav>
+
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
