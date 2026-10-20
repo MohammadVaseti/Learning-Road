@@ -3,12 +3,13 @@ import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Not from "./pages/Not";
+import Nav from "./pages/nav";
 
 function App() {
   return (
     <Router>
       <h1>Saadoun</h1>
-
+      <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
