@@ -1,31 +1,13 @@
-import axios, { Axios } from "axios";
-import { useEffect, useState } from "react";
-import Age from "./Age";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
-  // fetch("https://catfact.ninja/fact")
-  //   .then((res) => res.json())
-  //   .then((data) => console.log(data));
-
-  const [catFact, setCatFact] = useState("");
-  useEffect(() => {
-    fetchFact();
-  }, []);
-
-  const fetchFact = () => {
-    axios
-      .get("https://catfact.ninja/fact")
-      .then((res) => setCatFact(res.data.fact));
-  };
-
-  return (
-    <>
-      <button onClick={fetchFact}>Fetch</button>
-      <p>{catFact}</p>
-
-      <Age />
-    </>
-  );
+  <>
+    <Router>
+      <Routes>
+        <Route></Route>
+      </Routes>
+    </Router>
+  </>;
 }
 
 export default App;
