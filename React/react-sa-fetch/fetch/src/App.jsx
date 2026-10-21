@@ -5,7 +5,10 @@ import Contact from "./pages/Contact";
 import Not from "./pages/Not";
 import Nav from "./pages/nav";
 import Profile from "./pages/Profile";
+import { useState } from "react";
 function App() {
+  const [username, setUsername] = useState("");
+
   return (
     <Router>
       <h1>Saadoun</h1>
