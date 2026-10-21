@@ -5,7 +5,12 @@ const Changeprofile = () => {
 
   return (
     <>
-      <input type="text" />
+      <input
+        type="text"
+        onChange={(event) => {
+          setNewUserName(event.target.value);
+        }}
+      />
       <button>change username</button>
     </>
   );
