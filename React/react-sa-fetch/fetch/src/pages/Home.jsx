@@ -6,7 +6,7 @@ const Home = (props) => {
 
   return (
     <>
-      <h1>home page username is - {props.username}</h1>
+      <h1>home page username is - {username}</h1>
     </>
   );
 };
