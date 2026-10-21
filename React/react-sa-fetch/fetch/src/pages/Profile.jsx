@@ -1,4 +1,5 @@
 import { useParams } from "react-router-dom";
+import Changeprofile from "../components/Changeprofile";
 
 const Profile = (props) => {
   const { name } = useParams();
@@ -8,6 +9,8 @@ const Profile = (props) => {
       <h1>
         this is profile page of {name} - username is {props.username}
       </h1>
+
+      <Changeprofile />
     </>
   );
 };
