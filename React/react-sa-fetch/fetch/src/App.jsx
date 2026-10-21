@@ -7,7 +7,7 @@ import Nav from "./pages/nav";
 import Profile from "./pages/Profile";
 import { useState } from "react";
 function App() {
-  const [username, setUsername] = useState("");
+  const [username, setUsername] = useState("saadoun");
 
   return (
     <Router>
