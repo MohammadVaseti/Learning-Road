@@ -1,5 +1,10 @@
 const Changeprofile = () => {
-  return (  );
-}
- 
+  return (
+    <>
+      <input type="text" />
+      <button>change profile</button>
+    </>
+  );
+};
+
 export default Changeprofile;
