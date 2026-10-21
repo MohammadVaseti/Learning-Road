@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-const Changeprofile = () => {
+const Changeprofile = (props) => {
   const [newUserName, setNewUserName] = useState("");
 
   return (
@@ -11,7 +11,9 @@ const Changeprofile = () => {
           setNewUserName(event.target.value);
         }}
       />
-      <button>change username</button>
+      <button onClick={() => props.setusername(newUserName)}>
+        change username
+      </button>
     </>
   );
 };

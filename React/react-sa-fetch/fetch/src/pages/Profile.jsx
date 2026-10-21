@@ -10,7 +10,7 @@ const Profile = (props) => {
         this is profile page of {name} - username is {props.username}
       </h1>
 
-      <Changeprofile />
+      <Changeprofile setusername={props.setUsername} />
     </>
   );
 };

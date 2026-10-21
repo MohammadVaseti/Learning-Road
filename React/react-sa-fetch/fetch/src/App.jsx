@@ -19,7 +19,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
         <Route
           path="/profile/:name?"
-          element={<Profile username={username} />}
+          element={<Profile username={username} setUsername={setUsername} />}
         />
         <Route path="*" element={<Not />} />
       </Routes>
