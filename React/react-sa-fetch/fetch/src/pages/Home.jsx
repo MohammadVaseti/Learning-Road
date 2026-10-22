@@ -6,7 +6,7 @@ import axios from "axios";
 const Home = () => {
   const { username } = useContext(profileContext);
 
-  const { data, isLoading, isError } = useQuery({
+  const { data, isLoading, isError, error } = useQuery({
     queryKey: ["cat"],
     queryFn: () =>
       axios.get("https://catfact.ninja/fact").then((res) => res.data),
@@ -17,7 +17,7 @@ const Home = () => {
   }
 
   if (isError) {
-    return <h2>خطا در دریافت اطلاعات!</h2>;
+    return <h2>خطا در دریافت اطلاعات! erro r is: {error.message}</h2>;
   }
 
   return (
