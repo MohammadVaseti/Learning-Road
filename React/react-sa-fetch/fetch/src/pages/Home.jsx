@@ -25,7 +25,7 @@ const Home = () => {
       <h1>نام کاربری: {username}</h1>
       <h2>{data?.fact}</h2>
 
-      <button></button>
+      <button onClick={refetch}>Update</button>
     </>
   );
 };
