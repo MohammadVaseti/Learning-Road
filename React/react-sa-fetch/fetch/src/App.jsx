@@ -7,6 +7,8 @@ import Nav from "./pages/nav";
 import Profile from "./pages/Profile";
 import { useState, createContext } from "react";
 
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
 export const profileContext = createContext();
 
 function App() {
