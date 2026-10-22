@@ -5,7 +5,9 @@ import { Axios } from "axios";
 
 const Home = (props) => {
   const { username } = useContext(profileContext);
-  const {} = useQuery(["cat"], () => {});
+  const {} = useQuery(["cat"], () => {
+    Axios.get("https://catfact.ninja/fact");
+  });
   return (
     <>
       <h1>home page username is - {username}</h1>
