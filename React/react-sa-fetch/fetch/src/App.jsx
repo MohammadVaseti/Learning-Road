@@ -12,7 +12,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 export const profileContext = createContext();
 
 function App() {
-  const client = new QueryClient();
+  const client = new QueryClient({ defaultOptions });
 
   const [username, setUsername] = useState("saadoun");
 
