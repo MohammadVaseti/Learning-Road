@@ -19,7 +19,7 @@ function App() {
   return (
     <div className="app">
       <profileContext.Provider value={{ username, setUsername }}>
-        <QueryClientProvider>
+        <QueryClientProvider client={client}>
           <Router>
             <h1>Saadoun</h1>
             <Nav />
