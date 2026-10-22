@@ -12,7 +12,12 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 export const profileContext = createContext();
 
 function App() {
-  const client = new QueryClient({ defaultOptions });
+  const client = new QueryClient({
+    defaultOptions: {
+      queries: { refetchOnWindowFocus: false },
+      mutations: {},
+    },
+  });
 
   const [username, setUsername] = useState("saadoun");
 
