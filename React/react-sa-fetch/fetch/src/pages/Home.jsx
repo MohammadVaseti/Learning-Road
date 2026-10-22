@@ -6,7 +6,7 @@ import axios from "axios";
 const Home = () => {
   const { username } = useContext(profileContext);
 
-  const { data, isLoading, isError, error } = useQuery({
+  const { data, isLoading, isError, error, refetch } = useQuery({
     queryKey: ["cat"],
     queryFn: () =>
       axios.get("https://catfact.ninja/fact").then((res) => res.data),
@@ -24,6 +24,8 @@ const Home = () => {
     <>
       <h1>نام کاربری: {username}</h1>
       <h2>{data?.fact}</h2>
+
+      <button></button>
     </>
   );
 };
