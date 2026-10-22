@@ -19,17 +19,19 @@ function App() {
   return (
     <div className="app">
       <profileContext.Provider value={{ username, setUsername }}>
-        <Router>
-          <h1>Saadoun</h1>
-          <Nav />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/profile/:name?" element={<Profile />} />
-            <Route path="*" element={<Not />} />
-          </Routes>
-        </Router>
+        <QueryClientProvider>
+          <Router>
+            <h1>Saadoun</h1>
+            <Nav />
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/profile/:name?" element={<Profile />} />
+              <Route path="*" element={<Not />} />
+            </Routes>
+          </Router>
+        </QueryClientProvider>
       </profileContext.Provider>
     </div>
   );
