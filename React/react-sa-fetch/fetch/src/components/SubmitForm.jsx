@@ -4,17 +4,25 @@ const SubmitForm = () => {
   const { register, handleSubmit } = useForm();
 
   const onFormSubmit = () => {
-    return console.log("form was submitted");
+    console.log("form was submitted");
   };
 
   return (
     <>
-      <form onSubmit={handleSubmit()}>
-        <input type="text" placeholder="name"></input>
-        <input type="text" placeholder="email"></input>
-        <input type="number" placeholder="age"></input>
-        <input type="text" placeholder="password"></input>
-        <input type="text" placeholder="confirm password"></input>
+      <form onSubmit={handleSubmit(onFormSubmit)}>
+        <input type="text" placeholder="name" {...register("name")}></input>
+        <input type="text" placeholder="email" {...register("email")}></input>
+        <input type="number" placeholder="age" {...register("age")}></input>
+        <input
+          type="text"
+          placeholder="password"
+          {...register("password")}
+        ></input>
+        <input
+          type="text"
+          placeholder="confirm password"
+          {...register("confirm password")}
+        ></input>
         <input type="submit"></input>
       </form>
     </>
