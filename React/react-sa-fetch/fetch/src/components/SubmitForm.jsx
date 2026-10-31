@@ -3,6 +3,10 @@ import { useForm } from "react-hook-form";
 const SubmitForm = () => {
   const { register, handleSubmit } = useForm();
 
+  const onFormSubmit = () => {
+    return console.log("form was submitted");
+  };
+
   return (
     <>
       <form onSubmit={handleSubmit()}>
