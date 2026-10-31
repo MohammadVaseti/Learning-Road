@@ -1,10 +1,16 @@
 import { useForm } from "react-hook-form";
+import * as yup from "react-hooks-yup-form";
 
 const SubmitForm = () => {
+
+const schema =
+
+
   const { register, handleSubmit } = useForm();
 
-  const onFormSubmit = () => {
+  const onFormSubmit = (data) => {
     console.log("form was submitted");
+    console.log(data);
   };
 
   return (
@@ -14,14 +20,14 @@ const SubmitForm = () => {
         <input type="text" placeholder="email" {...register("email")}></input>
         <input type="number" placeholder="age" {...register("age")}></input>
         <input
-          type="text"
+          type="password"
           placeholder="password"
           {...register("password")}
         ></input>
         <input
-          type="text"
+          type="password"
           placeholder="confirm password"
-          {...register("confirm password")}
+          {...register("confirmPassword")}
         ></input>
         <input type="submit"></input>
       </form>
