@@ -1,5 +1,5 @@
 import { useForm } from "react-hook-form";
-import * as yup from "react-hooks-yup-form";
+import * as yup from "yup";
 import { yupResolver } from "@hookform/resolvers/yup";
 const SubmitForm = () => {
   const schema = yup.object().shape({
@@ -9,11 +9,11 @@ const SubmitForm = () => {
     password: yup.string().required(),
     confirmPassword: yup
       .string()
-      .onOf([yup.ref("password")])
+      .oneOf([yup.ref("password")])
       .required(),
   });
 
-  const { register, handleSubmit } = useForm();
+  const { register, handleSubmit } = useForm({ resolver: yupResolver(schema) });
 
   const onFormSubmit = (data) => {
     console.log("form was submitted");
