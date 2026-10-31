@@ -6,7 +6,7 @@ import Not from "./pages/Not";
 import Nav from "./pages/nav";
 import Profile from "./pages/Profile";
 import { useState, createContext } from "react";
-
+import SubmitForm from './components/SubmitForm'
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 
 export const profileContext = createContext();
@@ -38,6 +38,8 @@ function App() {
           </Router>
         </QueryClientProvider>
       </profileContext.Provider>
+
+      <SubmitForm />
     </div>
   );
 }
