@@ -6,7 +6,7 @@ const SubmitForm = () => {
     name: yup.string().required(),
     email: yup.string().email(),
     age: yup.number().positive().min(18).max(120),
-    password: yup.string().required(),
+    password: yup.string().min(4).max(15),
     confirmPassword: yup
       .string()
       .oneOf([yup.ref("password")])
