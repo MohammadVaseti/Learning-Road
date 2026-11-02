@@ -6,7 +6,12 @@ const SubmitForm = () => {
     name: yup.string().required(),
     email: yup.string().email(),
     age: yup.number().positive().min(18).max(120),
-    password: yup.string().min(4).max(15),
+    password: yup
+      .string()
+      .min(4)
+      .max(15)
+      .matches(/[a-z] + /)
+      .required(),
     confirmPassword: yup
       .string()
       .oneOf([yup.ref("password")])
