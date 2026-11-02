@@ -18,7 +18,13 @@ const SubmitForm = () => {
       .required(),
   });
 
-  const { register, handleSubmit } = useForm({ resolver: yupResolver(schema) });
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(schema),
+  });
 
   const onFormSubmit = (data) => {
     console.log("form was submitted");
@@ -29,6 +35,7 @@ const SubmitForm = () => {
     <>
       <form onSubmit={handleSubmit(onFormSubmit)}>
         <input type="text" placeholder="name" {...register("name")}></input>
+        {errors.name && <p>{errors.name?.message}</p>}
         <input type="text" placeholder="email" {...register("email")}></input>
         <input type="number" placeholder="age" {...register("age")}></input>
         <input
