@@ -10,7 +10,7 @@ const SubmitForm = () => {
       .string()
       .min(4)
       .max(15)
-      .matches(/[a-z] + /)
+      .matches(/[a-z]+/)
       .required(),
     confirmPassword: yup
       .string()
