@@ -6,9 +6,9 @@ import Not from "./pages/Not";
 import Nav from "./pages/nav";
 import Profile from "./pages/Profile";
 import { useState, createContext } from "react";
-import SubmitForm from './components/SubmitForm'
+import SubmitForm from "./components/SubmitForm";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
-
+import useToggle from "./useToggle";
 export const profileContext = createContext();
 
 function App() {
@@ -20,9 +20,12 @@ function App() {
   });
 
   const [username, setUsername] = useState("saadoun");
+  const [isVisible, toggle] = useToggle();
 
   return (
     <div className="app">
+      <button onClick={toggle}> {isVisible ? "hide" : "show"}</button>
+      {isVisible && <p>text</p>}
       <profileContext.Provider value={{ username, setUsername }}>
         <QueryClientProvider client={client}>
           <Router>
@@ -38,7 +41,6 @@ function App() {
           </Router>
         </QueryClientProvider>
       </profileContext.Provider>
-
       <SubmitForm />
     </div>
   );

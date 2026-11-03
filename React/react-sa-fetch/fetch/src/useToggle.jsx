@@ -5,6 +5,7 @@ const useToggle = (initialValue = false) => {
   const toggle = () => {
     setState((prev) => !prev);
   };
+  return [state, toggle];
 };
 
 export default useToggle;
