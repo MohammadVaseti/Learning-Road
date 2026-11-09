@@ -9,6 +9,7 @@ import { useState, createContext } from "react";
 import SubmitForm from "./components/SubmitForm";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import useToggle from "./useToggle";
+import { Provider } from "react-redux";
 export const profileContext = createContext();
 
 function App() {
