@@ -25,24 +25,26 @@ function App() {
 
   return (
     <div className="app">
-      <button onClick={toggle}> {isVisible ? "hide" : "show"}</button>
-      {isVisible && <p>text</p>}
-      <profileContext.Provider value={{ username, setUsername }}>
-        <QueryClientProvider client={client}>
-          <Router>
-            <h1>Saadoun</h1>
-            <Nav />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/about" element={<About />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/profile/:name?" element={<Profile />} />
-              <Route path="*" element={<Not />} />
-            </Routes>
-          </Router>
-        </QueryClientProvider>
-      </profileContext.Provider>
-      <SubmitForm />
+      <Provider store={}>
+        <button onClick={toggle}> {isVisible ? "hide" : "show"}</button>
+        {isVisible && <p>text</p>}
+        <profileContext.Provider value={{ username, setUsername }}>
+          <QueryClientProvider client={client}>
+            <Router>
+              <h1>Saadoun</h1>
+              <Nav />
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/about" element={<About />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/profile/:name?" element={<Profile />} />
+                <Route path="*" element={<Not />} />
+              </Routes>
+            </Router>
+          </QueryClientProvider>
+        </profileContext.Provider>
+        <SubmitForm />
+      </Provider>
     </div>
   );
 }
