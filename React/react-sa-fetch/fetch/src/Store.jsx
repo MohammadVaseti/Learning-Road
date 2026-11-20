@@ -12,4 +12,7 @@ const userSlice = createSlice({
       state.username = ''
     }
 })
+
+
+const {login , logout} = userSlice.actions
 const store = configureStore({reducer :});
