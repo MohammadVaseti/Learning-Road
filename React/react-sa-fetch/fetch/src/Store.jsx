@@ -5,9 +5,9 @@ const userSlice = createSlice({
   initialState : {username : ''} ,
   reducers : {
     login : (state , action)=>{
-      state.username =
+      state.username = action.payload.username
       
     } ,
-    logout : ()=>{}
+    logout : (state)=>{}
 })
 const store = configureStore({reducer :});
