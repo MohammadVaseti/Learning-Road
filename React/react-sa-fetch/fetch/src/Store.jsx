@@ -1,20 +1,21 @@
-import { configureStore , createSlice } from "@reduxjs/toolkit";
+import { configureStore, createSlice } from "@reduxjs/toolkit";
 
 const userSlice = createSlice({
-  name : 'user' ,
-  initialState : {username : ''} ,
-  reducers : {
-    login : (state , action)=>{
-      state.username = action.payload.username
-      
-    } ,
-    logout : (state)=>{
-      state.username = ''
-    }
-})
+  name: "user",
+  initialState: { username: "" },
+  reducers: {
+    login: (state, action) => {
+      state.username = action.payload.username;
+    },
+    logout: (state) => {
+      state.username = "";
+    },
+  },
+});
 
-
-export const {login , logout} = userSlice.actions
-const store = configureStore({reducer : {
-  user : userSlice.reducer
-}});
+export const { login, logout } = userSlice.actions;
+export const store = configureStore({
+  reducer: {
+    user: userSlice.reducer,
+  },
+});
