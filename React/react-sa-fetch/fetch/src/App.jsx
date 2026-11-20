@@ -10,6 +10,7 @@ import SubmitForm from "./components/SubmitForm";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import useToggle from "./useToggle";
 import { Provider } from "react-redux";
+import { store } from "./Store";
 export const profileContext = createContext();
 
 function App() {
@@ -25,7 +26,7 @@ function App() {
 
   return (
     <div className="app">
-      <Provider store={}>
+      <Provider store={store}>
         <button onClick={toggle}> {isVisible ? "hide" : "show"}</button>
         {isVisible && <p>text</p>}
         <profileContext.Provider value={{ username, setUsername }}>
