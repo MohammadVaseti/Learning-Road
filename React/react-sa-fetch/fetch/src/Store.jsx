@@ -8,6 +8,8 @@ const userSlice = createSlice({
       state.username = action.payload.username
       
     } ,
-    logout : (state)=>{}
+    logout : (state)=>{
+      state.username = ''
+    }
 })
 const store = configureStore({reducer :});
