@@ -6,7 +6,11 @@ const Login = () => {
   return (
     <>
       <h1>login</h1>
-      <input onChange={(event) => {}} />
+      <input
+        onChange={(event) => {
+          setNewUser(event.target.value);
+        }}
+      />
       <button>login</button>
       <button>logout</button>
     </>
