@@ -1,7 +1,10 @@
 import { useState } from "react";
+import { login, logout } from "./Store";
+import { useDispatch } from "react-redux";
 
 const Login = () => {
   const [newUser, setNewUser] = useState("");
+  const dispatch = useDispatch();
 
   return (
     <>
