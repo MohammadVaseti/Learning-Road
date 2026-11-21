@@ -12,9 +12,9 @@ const Person = (props) => {
   );
 };
 
-Person.propTypes = {
-  name: propTypes.string,
-  age: propTypes.number,
+Person.PropTypes = {
+  name: PropTypes.string,
+  age: PropTypes.number,
 };
 
 export default Person;

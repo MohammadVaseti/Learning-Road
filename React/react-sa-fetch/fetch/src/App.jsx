@@ -12,6 +12,7 @@ import useToggle from "./useToggle";
 import { Provider } from "react-redux";
 import { store } from "./Store";
 import Login from "./components/Login";
+import Person from "./components/Person";
 export const profileContext = createContext();
 
 function App() {
@@ -28,6 +29,8 @@ function App() {
   return (
     <div className="app">
       <Provider store={store}>
+        <Person name={"saadoun"} age={28} />
+
         <Login></Login>
         <button onClick={toggle}> {isVisible ? "hide" : "show"}</button>
         {isVisible && <p>text</p>}
